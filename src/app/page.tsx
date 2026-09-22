@@ -10,6 +10,7 @@ import BuildersJourney from "@/components/BuildersJourney";
 import WhatYouTakeAway from "@/components/WhatYouTakeAway";
 import LatestEpisodeSection from "@/components/LatestEpisodeSection";
 import MovementPrinciples from "@/components/MovementPrinciples";
+import FounderToolkit from "@/components/FounderToolkit";
 import ManifestoSection from "@/components/ManifestoSection";
 import Footer from "@/components/Footer";
 import FloatingSpotify from "@/components/FloatingSpotify";
@@ -48,7 +49,10 @@ export default function Home() {
       {/* 8. The Young Founder Principles (Movement Manifesto) */}
       <MovementPrinciples />
 
-      {/* 9. A Better Tomorrow Starts With Building Today (Emotional Pre-Footer) */}
+      {/* 9. Guest Experience Kit & Founder Toolkit */}
+      <FounderToolkit />
+
+      {/* 10. A Better Tomorrow Starts With Building Today (Emotional Pre-Footer) */}
       <ManifestoSection />
 
       {/* 11. Footer */}

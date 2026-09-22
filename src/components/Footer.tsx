@@ -124,6 +124,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#toolkit" className="hover:text-[#2BF4C3] text-white font-medium transition-colors">
+                  Founder &amp; Guest Toolkit
+                </a>
+              </li>
+              <li>
                 <a href="#latest-episode" className="hover:text-[#2BF4C3] transition-colors">
                   Sample Episode (EP. 01)
                 </a>

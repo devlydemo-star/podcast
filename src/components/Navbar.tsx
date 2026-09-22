@@ -36,6 +36,7 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
     { name: "The Journey", href: "#journey" },
     { name: "Takeaways", href: "#takeaways" },
     { name: "Principles", href: "#principles" },
+    { name: "Founder Toolkit", href: "#toolkit" },
   ];
 
   return (
