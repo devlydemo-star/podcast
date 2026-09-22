@@ -73,12 +73,12 @@ export default function FloatingAudioPlayer() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-3 sm:px-6 pb-3">
-        <div className="bg-[#0B1220]/95 backdrop-blur-2xl border border-[#3EF7D8]/30 rounded-2xl p-3 sm:p-4 shadow-2xl shadow-black/80 relative overflow-hidden">
+        <div className="bg-white/95 backdrop-blur-2xl border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xl relative overflow-hidden text-slate-900">
           
           {/* Top subtle scrub progress bar */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-white/10 group cursor-pointer">
+          <div className="absolute top-0 left-0 right-0 h-1 bg-slate-100 group cursor-pointer">
             <div
-              className="bg-[#3EF7D8] h-full transition-all"
+              className="bg-teal-600 h-full transition-all"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
@@ -87,7 +87,7 @@ export default function FloatingAudioPlayer() {
             
             {/* Left: Thumbnail & Episode info (35%) */}
             <div className="flex items-center gap-3 min-w-0 max-w-[40%] sm:max-w-[30%]">
-              <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-xl overflow-hidden flex-shrink-0 border border-[#3EF7D8]/30">
+              <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-xl overflow-hidden flex-shrink-0 border border-slate-200">
                 <Image
                   src={currentEpisode.thumbnail}
                   alt={currentEpisode.title}
@@ -97,21 +97,21 @@ export default function FloatingAudioPlayer() {
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-bold text-[#3EF7D8] uppercase tracking-wider">
+                  <span className="text-[10px] font-bold text-teal-700 uppercase tracking-wider">
                     EP #{currentEpisode.number}
                   </span>
                   {isPlaying && (
                     <div className="flex items-end gap-0.5 h-3">
-                      <span className="w-0.5 h-2.5 bg-[#3EF7D8] rounded-full wave-bar" />
-                      <span className="w-0.5 h-3 bg-[#3EF7D8] rounded-full wave-bar" style={{ animationDelay: "0.2s" }} />
-                      <span className="w-0.5 h-1.5 bg-[#3EF7D8] rounded-full wave-bar" style={{ animationDelay: "0.4s" }} />
+                      <span className="w-0.5 h-2.5 bg-teal-600 rounded-full wave-bar" />
+                      <span className="w-0.5 h-3 bg-teal-600 rounded-full wave-bar" style={{ animationDelay: "0.2s" }} />
+                      <span className="w-0.5 h-1.5 bg-teal-600 rounded-full wave-bar" style={{ animationDelay: "0.4s" }} />
                     </div>
                   )}
                 </div>
-                <h4 className="text-xs sm:text-sm font-bold text-white truncate">
+                <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">
                   {currentEpisode.title}
                 </h4>
-                <p className="text-[10px] sm:text-xs text-[#B0B7C3] truncate">
+                <p className="text-[10px] sm:text-xs text-slate-500 truncate">
                   Maher Dhami
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function FloatingAudioPlayer() {
                 {/* Skip -15s */}
                 <button
                   onClick={() => skipTime(-15)}
-                  className="text-[#B0B7C3] hover:text-white transition-colors"
+                  className="text-slate-500 hover:text-slate-900 transition-colors"
                   title="Rewind 15s"
                 >
                   <RotateCcw className="w-4 h-4" />
@@ -134,7 +134,7 @@ export default function FloatingAudioPlayer() {
                 {/* Play / Pause */}
                 <button
                   onClick={togglePlay}
-                  className="w-10 h-10 rounded-full bg-[#3EF7D8] text-[#050816] flex items-center justify-center shadow-lg shadow-[#3EF7D8]/30 hover:scale-105 active:scale-95 transition-all"
+                  className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center shadow-md hover:bg-slate-800 active:scale-95 transition-all"
                   aria-label={isPlaying ? "Pause" : "Play"}
                 >
                   {isPlaying ? (
@@ -147,7 +147,7 @@ export default function FloatingAudioPlayer() {
                 {/* Skip +30s */}
                 <button
                   onClick={() => skipTime(30)}
-                  className="text-[#B0B7C3] hover:text-white transition-colors"
+                  className="text-slate-500 hover:text-slate-900 transition-colors"
                   title="Forward 30s"
                 >
                   <RotateCw className="w-4 h-4" />
@@ -156,7 +156,7 @@ export default function FloatingAudioPlayer() {
                 {/* Speed Toggle */}
                 <button
                   onClick={cycleSpeed}
-                  className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-white/10 hover:bg-[#3EF7D8]/20 text-[#3EF7D8] transition-colors border border-white/10"
+                  className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-100 hover:bg-teal-50 text-teal-700 transition-colors border border-slate-200"
                   title="Playback Speed"
                 >
                   {playbackRate}x
@@ -164,7 +164,7 @@ export default function FloatingAudioPlayer() {
               </div>
 
               {/* Progress Slider & Times */}
-              <div className="w-full flex items-center gap-2 text-[10px] sm:text-xs text-[#B0B7C3] font-mono">
+              <div className="w-full flex items-center gap-2 text-[10px] sm:text-xs text-slate-500 font-mono">
                 <span>{formatTime(currentTime)}</span>
                 <input
                   type="range"
@@ -172,7 +172,7 @@ export default function FloatingAudioPlayer() {
                   max="100"
                   value={progressPercent || 0}
                   onChange={handleSeekChange}
-                  className="flex-1 h-1 bg-white/20 rounded-lg appearance-none cursor-pointer accent-[#3EF7D8]"
+                  className="flex-1 h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-teal-600"
                 />
                 <span>{formatTime(duration)}</span>
               </div>
@@ -185,7 +185,7 @@ export default function FloatingAudioPlayer() {
               <div className="hidden sm:flex items-center gap-1.5">
                 <button
                   onClick={toggleMute}
-                  className="text-[#B0B7C3] hover:text-[#3EF7D8] transition-colors"
+                  className="text-slate-500 hover:text-teal-700 transition-colors"
                   aria-label="Toggle Mute"
                 >
                   {volume === 0 ? (
@@ -201,7 +201,7 @@ export default function FloatingAudioPlayer() {
                   step="0.05"
                   value={volume}
                   onChange={(e) => setVolume(parseFloat(e.target.value))}
-                  className="w-16 h-1 bg-white/20 rounded-lg appearance-none cursor-pointer accent-[#3EF7D8]"
+                  className="w-16 h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-teal-600"
                 />
               </div>
 
@@ -210,17 +210,17 @@ export default function FloatingAudioPlayer() {
                 href={currentEpisode.spotifyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#1DD1B9]/15 text-[#1DD1B9] border border-[#1DD1B9]/30 hover:bg-[#1DD1B9] hover:text-[#050816] transition-all"
+                className="hidden md:flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold bg-teal-50 text-teal-800 border border-teal-200 hover:bg-teal-100 transition-all"
                 title="Listen full episode on Spotify"
               >
-                <SpotifyIcon className="w-3.5 h-3.5" />
+                <SpotifyIcon className="w-3.5 h-3.5 text-[#1DB954]" />
                 <span>Spotify</span>
               </a>
 
               {/* Minimize / Expand */}
               <button
                 onClick={() => setIsMinimized(!isMinimized)}
-                className="p-1.5 rounded-lg text-[#B0B7C3] hover:text-white bg-white/5"
+                className="p-1.5 rounded-lg text-slate-500 hover:text-slate-900 bg-slate-100"
                 title={isMinimized ? "Expand Player" : "Minimize Player"}
               >
                 {isMinimized ? (
@@ -233,7 +233,7 @@ export default function FloatingAudioPlayer() {
               {/* Close Player */}
               <button
                 onClick={closePlayer}
-                className="p-1.5 rounded-lg text-[#B0B7C3] hover:text-rose-400 bg-white/5"
+                className="p-1.5 rounded-lg text-slate-500 hover:text-rose-600 bg-slate-100"
                 title="Close Player"
               >
                 <X className="w-4 h-4" />

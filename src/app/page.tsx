@@ -20,7 +20,7 @@ export default function Home() {
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#03100D] text-white selection:bg-[#2BF4C3]/20 selection:text-[#2BF4C3]">
+    <div className="relative min-h-screen bg-[#F8FAFC] text-slate-900 selection:bg-teal-500/20 selection:text-teal-950 font-sans antialiased">
       
       {/* Top Navigation Bar */}
       <Navbar onOpenNewsletterModal={() => setIsNewsletterOpen(true)} />

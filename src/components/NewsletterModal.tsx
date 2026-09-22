@@ -49,11 +49,11 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="bg-[#03100D] border border-[#2BF4C3]/30 rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md animate-in fade-in duration-200">
+      <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl relative text-slate-900">
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-white/5 hover:bg-white/10 text-[#94A3B8] hover:text-white cursor-pointer"
+          className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 cursor-pointer transition-colors"
           aria-label="Close Modal"
         >
           <X className="w-5 h-5" />
@@ -61,11 +61,11 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
 
         {submitted ? (
           <div className="text-center py-6 animate-in zoom-in-95 duration-200">
-            <div className="w-14 h-14 rounded-full bg-[#2BF4C3]/20 border border-[#2BF4C3] flex items-center justify-center mx-auto mb-4 text-[#2BF4C3]">
+            <div className="w-14 h-14 rounded-full bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto mb-4 text-teal-700">
               <Users className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Welcome aboard, {name}!</h3>
-            <p className="text-xs text-[#94A3B8] leading-relaxed mb-5">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Welcome aboard, {name}!</h3>
+            <p className="text-xs text-slate-600 leading-relaxed mb-5">
               We opened the community application form in a new tab. If it didn&apos;t open automatically, click the button below:
             </p>
 
@@ -73,16 +73,16 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
               href={SHOW_INFO.communityFormUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-lg shadow-[#2BF4C3]/30 transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
+              className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-slate-900 hover:bg-slate-800 text-white shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
             >
-              <Users className="w-4 h-4 text-[#03100D]" />
+              <Users className="w-4 h-4 text-teal-400" />
               <span>Complete Application Form</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
             <button
               onClick={onClose}
-              className="text-xs text-[#94A3B8] hover:text-[#2BF4C3] cursor-pointer transition-colors"
+              className="text-xs text-slate-500 hover:text-teal-700 cursor-pointer transition-colors"
             >
               Back to Show
             </button>
@@ -93,23 +93,23 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
               <BrandLogo avatarSize="w-12 h-12" textSize="text-base sm:text-lg" />
             </div>
 
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#081717] border border-[#2BF4C3]/30 mb-3">
-              <Bell className="w-3 h-3 text-[#2BF4C3]" />
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#2BF4C3]">
-                Founder VIP List & Community
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-50 border border-teal-200 mb-3">
+              <Bell className="w-3 h-3 text-teal-600" />
+              <span className="text-[10px] font-bold uppercase tracking-wider text-teal-700">
+                Founder VIP List &amp; Community
               </span>
             </div>
 
-            <h3 className="text-2xl font-black text-white mb-2">
+            <h3 className="text-2xl font-black text-slate-900 mb-2">
               Never Miss an Episode or Lesson
             </h3>
-            <p className="text-xs text-[#94A3B8] leading-relaxed mb-6">
+            <p className="text-xs text-slate-600 leading-relaxed mb-6">
               Subscribe to weekly retrospective briefings and apply to get access to our Founder Community.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
                   Name
                 </label>
                 <input
@@ -117,12 +117,12 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your Name"
-                  className="w-full px-4 py-3 rounded-xl bg-[#081717] border border-white/10 text-white text-sm focus:outline-none focus:border-[#2BF4C3]"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-teal-500 focus:bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-1">
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
                   Email
                 </label>
                 <input
@@ -130,17 +130,17 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="founder@example.com"
-                  className="w-full px-4 py-3 rounded-xl bg-[#081717] border border-white/10 text-white text-sm focus:outline-none focus:border-[#2BF4C3]"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-teal-500 focus:bg-white"
                 />
               </div>
 
-              {error && <p className="text-xs text-rose-400 font-medium">{error}</p>}
+              {error && <p className="text-xs text-rose-500 font-medium">{error}</p>}
 
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-xl font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-[#2BF4C3]/20"
+                className="w-full py-3.5 rounded-xl font-bold text-sm bg-slate-900 hover:bg-slate-800 text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
-                <Users className="w-4 h-4 text-[#03100D]" />
+                <Users className="w-4 h-4 text-teal-400" />
                 <span>Apply to Join Community</span>
               </button>
             </form>

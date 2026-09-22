@@ -73,24 +73,24 @@ export default function MovementPrinciples() {
   };
 
   return (
-    <section id="principles" className="py-24 relative bg-[#03100D] border-t border-white/5">
+    <section id="principles" className="py-24 relative bg-white border-t border-slate-200/80">
       {/* Background radial glow */}
-      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#2BF4C3]/5 rounded-full blur-[170px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-[170px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#081717] border border-[#2BF4C3]/30 mb-3.5 shadow-sm">
-            <Shield className="w-3.5 h-3.5 text-[#2BF4C3]" />
-            <span className="text-xs font-bold uppercase tracking-wider text-[#2BF4C3]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 border border-teal-200 mb-3.5 shadow-sm">
+            <Shield className="w-3.5 h-3.5 text-teal-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-teal-700">
               The Movement Manifesto
             </span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            The Young Founder <span className="text-gradient-teal">Principles</span>
+          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            The Young Founder <span className="text-teal-600">Principles</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#94A3B8] mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             These are not corporate rules. They are the battle-tested principles of a generation of ambitious builders refusing to stay on the sidelines.
           </p>
         </div>
@@ -102,46 +102,46 @@ export default function MovementPrinciples() {
             return (
               <div
                 key={p.id}
-                className="glass-panel-hover rounded-3xl p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-300 border border-white/5 hover:border-[#2BF4C3]/40"
+                className="bg-white rounded-3xl p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-300 border border-slate-200/90 hover:border-teal-500/50 hover:shadow-xl hover:-translate-y-1 shadow-sm"
               >
                 {/* Decorative corner number */}
-                <span className="absolute top-6 right-7 font-mono font-black text-2xl sm:text-3xl text-white/10 group-hover:text-[#2BF4C3]/20 transition-colors pointer-events-none">
+                <span className="absolute top-6 right-7 font-mono font-black text-2xl sm:text-3xl text-slate-200 group-hover:text-teal-600/20 transition-colors pointer-events-none">
                   {p.number}
                 </span>
 
                 <div>
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#2BF4C3] block mb-2">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-teal-700 block mb-2">
                     {p.tagline}
                   </span>
 
-                  <h3 className="text-xl font-black text-white group-hover:text-[#2BF4C3] transition-colors mb-3 leading-snug">
+                  <h3 className="text-xl font-black text-slate-900 group-hover:text-teal-600 transition-colors mb-3 leading-snug">
                     {p.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed mb-6">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
                     {p.description}
                   </p>
                 </div>
 
                 <div>
                   {/* Highlight rule callout */}
-                  <div className="p-3.5 rounded-xl bg-[#081717] border border-white/5 mb-4">
-                    <p className="text-xs italic text-white/90 leading-relaxed">
+                  <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 mb-4">
+                    <p className="text-xs italic text-slate-800 leading-relaxed">
                       &ldquo;{p.rule}&rdquo;
                     </p>
                   </div>
 
                   {/* Copy Action Row */}
-                  <div className="pt-3 border-t border-white/5 flex items-center justify-between">
-                    <span className="text-[11px] font-mono text-[#94A3B8] uppercase">Principle {p.number}</span>
+                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-[11px] font-mono text-slate-500 uppercase">Principle {p.number}</span>
                     <button
                       onClick={() => handleCopy(p)}
-                      className="inline-flex items-center gap-1.5 text-xs text-[#94A3B8] hover:text-[#2BF4C3] transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-teal-600 transition-colors cursor-pointer"
                     >
                       {isCopied ? (
                         <>
-                          <Check className="w-3.5 h-3.5 text-[#2BF4C3]" />
-                          <span className="text-[#2BF4C3] font-bold">Copied</span>
+                          <Check className="w-3.5 h-3.5 text-teal-600" />
+                          <span className="text-teal-600 font-bold">Copied</span>
                         </>
                       ) : (
                         <>

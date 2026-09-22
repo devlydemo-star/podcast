@@ -43,7 +43,7 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#03100D]/95 backdrop-blur-md border-b border-[#2BF4C3]/15 py-3.5 shadow-xl shadow-black/60"
+          ? "bg-white/90 backdrop-blur-md border-b border-slate-200/80 py-3.5 shadow-sm"
           : "bg-transparent py-5"
       }`}
     >
@@ -67,13 +67,13 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
                 }}
                 className={`text-sm font-semibold transition-all relative py-1 ${
                   link.active
-                    ? "text-white"
-                    : "text-[#94A3B8] hover:text-white"
+                    ? "text-slate-900 font-bold"
+                    : "text-slate-600 hover:text-slate-900"
                 }`}
               >
                 <span>{link.name}</span>
                 {link.active && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#2BF4C3] rounded-full" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-teal-600 rounded-full" />
                 )}
               </a>
             ))}
@@ -85,10 +85,10 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
               href={SHOW_INFO.spotifyShowUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-lg shadow-[#2BF4C3]/30 hover:shadow-[#2BF4C3]/50 transition-all transform hover:scale-105 cursor-pointer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider bg-slate-900 hover:bg-slate-800 text-white shadow-sm hover:shadow-md transition-all transform hover:scale-[1.02] cursor-pointer"
             >
               <span>Listen on Spotify</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 text-teal-400" />
             </a>
           </div>
 
@@ -98,13 +98,13 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
               href={SHOW_INFO.spotifyShowUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-1.5 rounded-full text-xs font-bold bg-[#2BF4C3] text-[#03100D]"
+              className="px-3 py-1.5 rounded-full text-xs font-bold bg-slate-900 text-white"
             >
               Spotify
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg bg-[#081717] border border-white/10 text-white"
+              className="p-2 rounded-lg bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -116,7 +116,7 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
 
       {/* Mobile Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#081717]/98 backdrop-blur-xl border-b border-[#2BF4C3]/20 px-6 py-5 shadow-2xl animate-in fade-in slide-in-from-top-4">
+        <div className="md:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-6 py-5 shadow-xl animate-in fade-in slide-in-from-top-4">
           <div className="flex flex-col space-y-3.5">
             {navLinks.map((link) => (
               <a
@@ -130,21 +130,21 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
                   }
                 }}
                 className={`text-base font-semibold py-1 transition-colors ${
-                  link.active ? "text-[#2BF4C3]" : "text-[#94A3B8] hover:text-white"
+                  link.active ? "text-teal-600 font-bold" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
                 {link.name}
               </a>
             ))}
-            <div className="pt-3 border-t border-white/10">
+            <div className="pt-3 border-t border-slate-200">
               <a
                 href={SHOW_INFO.spotifyShowUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-full font-bold text-sm bg-[#2BF4C3] text-[#03100D]"
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-full font-bold text-sm bg-slate-900 text-white shadow-sm"
               >
                 <span>Listen on Spotify</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 text-teal-400" />
               </a>
             </div>
           </div>
