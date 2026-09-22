@@ -32,19 +32,19 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Giant Styled Headline with Vibrant Gradient */}
+            {/* Giant Styled Headline in Standard Green Color */}
             <div className="mb-6 leading-none">
-              <span className="text-2xl sm:text-3xl font-bold text-slate-500 block mb-1">
+              <span className="text-2xl sm:text-3xl font-bold text-green-600 block mb-1">
                 The
               </span>
-              <h1 className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-slate-900 leading-[0.95] mb-1">
+              <h1 className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-green-600 leading-[0.95] mb-1">
                 YOUNG
               </h1>
               <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
-                <span className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight bg-gradient-to-r from-teal-600 via-indigo-600 to-pink-600 bg-clip-text text-transparent leading-[0.95]">
+                <span className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-green-600 leading-[0.95]">
                   FOUNDER
                 </span>
-                <span className="font-script text-4xl sm:text-6xl xl:text-7xl text-slate-900 font-normal self-end pb-1 sm:pb-2">
+                <span className="font-script text-4xl sm:text-6xl xl:text-7xl text-green-600 font-normal self-end pb-1 sm:pb-2">
                   Show
                 </span>
                 <div className="self-center pb-1">
