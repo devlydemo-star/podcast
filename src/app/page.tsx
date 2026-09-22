@@ -8,6 +8,7 @@ import WhoThisIsFor from "@/components/WhoThisIsFor";
 import WhyDifferent from "@/components/WhyDifferent";
 import BuildersJourney from "@/components/BuildersJourney";
 import WhatYouTakeAway from "@/components/WhatYouTakeAway";
+import FounderWisdom from "@/components/FounderWisdom";
 import LatestEpisodeSection from "@/components/LatestEpisodeSection";
 import MovementPrinciples from "@/components/MovementPrinciples";
 import FounderToolkit from "@/components/FounderToolkit";
@@ -43,7 +44,10 @@ export default function Home() {
       {/* 6. What You'll Take Away (8 Visual Skill Cards) */}
       <WhatYouTakeAway />
 
-      {/* 7. Sample Episode Spotlight */}
+      {/* 7. Unfiltered Founder Wisdom & Heuristics */}
+      <FounderWisdom />
+
+      {/* 8. Sample Episode Spotlight */}
       <LatestEpisodeSection />
 
       {/* 8. The Young Founder Principles (Movement Manifesto) */}

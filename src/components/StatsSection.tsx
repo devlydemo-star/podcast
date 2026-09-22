@@ -8,22 +8,30 @@ export default function StatsSection() {
     {
       icon: <Code className="w-5 h-5 text-teal-600" />,
       title: "Student Builders",
-      subtitle: "Developers, founders & creators",
+      subtitle: "Developers & founders",
+      badge: "Builders",
+      sparkline: "M0 18 Q 20 8, 40 14 T 80 4",
     },
     {
       icon: <Flame className="w-5 h-5 text-teal-600" />,
       title: "Unfiltered Reality",
-      subtitle: "The real climb before success",
+      subtitle: "The climb before success",
+      badge: "100% Raw",
+      sparkline: "M0 16 Q 20 18, 40 10 T 80 2",
     },
     {
       icon: <Radio className="w-5 h-5 text-teal-600" />,
       title: "Weekly Drops",
-      subtitle: "Streaming on Spotify & YouTube",
+      subtitle: "Spotify & YouTube",
+      badge: "Weekly",
+      sparkline: "M0 14 Q 20 6, 40 12 T 80 4",
     },
     {
       icon: <Users className="w-5 h-5 text-teal-600" />,
       title: "The Movement",
-      subtitle: "Building the future together",
+      subtitle: "Building together",
+      badge: "Community",
+      sparkline: "M0 18 Q 20 12, 40 6 T 80 2",
     },
   ];
 
@@ -34,20 +42,38 @@ export default function StatsSection() {
           {pillars.map((item, idx) => (
             <div
               key={idx}
-              className={`flex items-center gap-4 ${
+              className={`flex items-center justify-between gap-3 ${
                 idx !== 0 ? "pt-4 sm:pt-0 sm:pl-6" : ""
               }`}
             >
-              <div className="w-11 h-11 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center flex-shrink-0 shadow-sm">
-                {item.icon}
+              <div className="flex items-center gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <h4 className="text-sm sm:text-base font-extrabold text-slate-900 leading-tight">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <p className="text-xs text-slate-500 font-medium leading-tight mt-1">
+                    {item.subtitle}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-sm sm:text-base font-extrabold text-slate-900 leading-tight">
-                  {item.title}
-                </h4>
-                <p className="text-xs text-slate-500 font-medium leading-tight mt-1">
-                  {item.subtitle}
-                </p>
+
+              {/* Mini Sparkline SVG Graphic */}
+              <div className="hidden lg:block w-16 h-8 flex-shrink-0 opacity-70">
+                <svg viewBox="0 0 80 20" className="w-full h-full overflow-visible">
+                  <path
+                    d={item.sparkline}
+                    fill="none"
+                    stroke="#0D9488"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                  />
+                  <circle cx="80" cy="3" r="3" fill="#0D9488" />
+                </svg>
               </div>
             </div>
           ))}

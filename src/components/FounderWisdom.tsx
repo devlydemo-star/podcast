@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { FOUNDER_WISDOM } from "@/data/podcastData";
-import { Quote, Lightbulb, Share2, Check } from "lucide-react";
+import { Quote, Lightbulb, Share2, Check, Sparkles, User } from "lucide-react";
 
 export default function FounderWisdom() {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -17,59 +17,77 @@ export default function FounderWisdom() {
   };
 
   return (
-    <section id="wisdom" className="py-20 relative bg-[#03100D] border-t border-white/5">
+    <section id="wisdom" className="py-24 relative bg-[#F8FAFC] border-t border-slate-200/80 overflow-hidden">
+      {/* Subtle ambient lighting */}
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-[170px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] bg-sky-500/5 rounded-full blur-[160px] pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#081717] border border-[#2BF4C3]/30 mb-3">
-            <Lightbulb className="w-3.5 h-3.5 text-[#2BF4C3]" />
-            <span className="text-xs font-bold uppercase tracking-wider text-[#2BF4C3]">
-              Founder Principles
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 border border-teal-200 mb-3.5 shadow-sm">
+            <Lightbulb className="w-3.5 h-3.5 text-teal-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-teal-700">
+              Founder Principles &amp; Heuristics
             </span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            Founder <span className="text-gradient-teal">Wisdom</span>
+          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            Unfiltered <span className="text-teal-600">Founder Wisdom</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#94A3B8] mt-2">
-            Unfiltered mental models, startup heuristics, and raw advice from the frontlines of building.
+          <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
+            Raw mental models, startup heuristics, and honest advice forged in the messy trenches of building and shipping.
           </p>
         </div>
 
         {/* Featured Quote Highlight Card */}
-        <div className="glass-panel rounded-3xl p-8 sm:p-12 border border-[#2BF4C3]/30 shadow-2xl relative mb-8 overflow-hidden">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border-2 border-teal-500/30 shadow-xl relative mb-10 overflow-hidden max-w-4xl mx-auto">
+          {/* Top accent bar */}
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-600" />
           
-          <div className="absolute top-6 right-8 text-[#2BF4C3]/10 pointer-events-none">
-            <Quote className="w-32 h-32" />
+          {/* Subtle background quote watermark */}
+          <div className="absolute -top-4 right-6 text-teal-600/10 pointer-events-none select-none">
+            <Quote className="w-40 h-40" />
           </div>
 
-          <div className="relative z-10 max-w-3xl">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#2BF4C3]/15 text-[#2BF4C3] border border-[#2BF4C3]/30 mb-6">
-              {activeQuote.theme}
-            </span>
+          <div className="relative z-10">
+            <div className="flex flex-wrap items-center gap-2 mb-6">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200 shadow-sm">
+                <Sparkles className="w-3 h-3 text-teal-600" />
+                <span>{activeQuote.theme}</span>
+              </span>
+              <span className="text-xs font-mono font-medium text-slate-500">
+                Episode Heuristic #{activeIdx + 1}
+              </span>
+            </div>
 
-            <blockquote className="text-xl sm:text-3xl font-extrabold text-white leading-relaxed tracking-tight mb-6">
+            <blockquote className="text-xl sm:text-3xl font-extrabold text-slate-900 leading-relaxed tracking-tight mb-8">
               &ldquo;{activeQuote.quote}&rdquo;
             </blockquote>
 
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-white/10">
-              <div>
-                <p className="text-base font-bold text-white">Maher Dhami</p>
-                <p className="text-xs text-[#94A3B8]">{activeQuote.context}</p>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-slate-100">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                  MD
+                </div>
+                <div>
+                  <p className="text-sm font-black text-slate-900">Maher Dhami</p>
+                  <p className="text-xs text-slate-500 font-medium">{activeQuote.context}</p>
+                </div>
               </div>
 
               <button
                 onClick={handleCopyQuote}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 transition-colors self-start sm:self-auto cursor-pointer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 transition-all cursor-pointer self-start sm:self-auto shadow-sm hover:shadow"
               >
                 {copied ? (
                   <>
-                    <Check className="w-3.5 h-3.5 text-[#2BF4C3]" />
-                    <span className="text-[#2BF4C3]">Copied to Clipboard</span>
+                    <Check className="w-3.5 h-3.5 text-teal-600" />
+                    <span className="text-teal-700">Copied to Clipboard</span>
                   </>
                 ) : (
                   <>
-                    <Share2 className="w-3.5 h-3.5 text-[#94A3B8]" />
+                    <Share2 className="w-3.5 h-3.5 text-slate-500" />
                     <span>Share Quote</span>
                   </>
                 )}
@@ -78,23 +96,27 @@ export default function FounderWisdom() {
           </div>
         </div>
 
-        {/* Quote Switcher Pills */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Quote Switcher Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {FOUNDER_WISDOM.map((item, idx) => (
             <button
               key={item.id}
               onClick={() => setActiveIdx(idx)}
-              className={`p-4 rounded-2xl text-left transition-all cursor-pointer ${
+              className={`p-5 rounded-2xl text-left transition-all cursor-pointer border ${
                 activeIdx === idx
-                  ? "glass-panel border-[#2BF4C3] shadow-lg shadow-[#2BF4C3]/15"
-                  : "bg-[#081717] border border-white/5 hover:border-white/20 text-[#94A3B8]"
+                  ? "bg-white border-teal-500 shadow-md ring-2 ring-teal-100 scale-[1.02]"
+                  : "bg-white/80 border-slate-200 hover:border-slate-300 text-slate-600 hover:bg-white shadow-sm"
               }`}
             >
               <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-bold text-[#2BF4C3] uppercase">{item.theme}</span>
-                <span className="text-[10px] font-mono text-[#94A3B8] uppercase">Insight</span>
+                <span className={`text-xs font-bold uppercase tracking-wider ${activeIdx === idx ? "text-teal-700" : "text-slate-500"}`}>
+                  {item.theme}
+                </span>
+                <span className="text-[10px] font-mono font-bold text-slate-400">
+                  0{idx + 1}
+                </span>
               </div>
-              <p className="text-xs text-white line-clamp-2 italic">
+              <p className="text-xs font-medium text-slate-800 line-clamp-3 leading-relaxed">
                 &ldquo;{item.quote}&rdquo;
               </p>
             </button>

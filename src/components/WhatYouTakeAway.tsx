@@ -158,6 +158,35 @@ export default function WhatYouTakeAway() {
           ))}
         </div>
 
+        {/* Bottom Graphic Compounding Summary Banner */}
+        <div className="mt-12 rounded-2xl p-6 sm:p-8 bg-slate-50 border border-slate-200/90 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 max-w-5xl mx-auto">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-2xl bg-teal-600 text-white flex items-center justify-center font-black text-xl shadow-md shadow-teal-600/30 flex-shrink-0">
+              ⚡
+            </div>
+            <div>
+              <h4 className="text-base sm:text-lg font-black text-slate-900">
+                Compounding Returns On Every Episode
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
+                Each discussion is engineered to save you months of trial-and-error by exposing the real traps early.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2.5">
+            <span className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+              ✓ Open Source Stacks
+            </span>
+            <span className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+              ✓ No Gatekeeping
+            </span>
+            <span className="px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-bold shadow-2xs">
+              ✓ 100% Free Access
+            </span>
+          </div>
+        </div>
+
       </div>
     </section>
   );

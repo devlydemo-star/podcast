@@ -65,9 +65,14 @@ export default function WhyDifferent() {
           </p>
         </div>
 
-        {/* Comparison Dual-Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        {/* Comparison Dual-Cards Grid with Centered VS Badge */}
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
+          {/* Centered Desktop VS Floating Pill */}
+          <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-slate-900 text-white font-black text-xs items-center justify-center shadow-xl border-4 border-[#F8FAFC]">
+            VS
+          </div>
+
           {/* Left Card: Most Startup Content */}
           <div className="rounded-3xl p-7 sm:p-10 bg-slate-50 border border-slate-200 flex flex-col justify-between relative overflow-hidden shadow-sm">
             <div>
@@ -85,7 +90,29 @@ export default function WhyDifferent() {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              {/* Graphical Metric Comparison Bar */}
+              <div className="mb-6 p-4 rounded-2xl bg-white border border-slate-200/80 space-y-3">
+                <div className="space-y-1">
+                  <div className="flex justify-between text-xs font-bold text-slate-600">
+                    <span>Hindsight &amp; PR Glamour</span>
+                    <span className="text-rose-600 font-mono">92%</span>
+                  </div>
+                  <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                    <div className="h-full bg-rose-500 rounded-full w-[92%]" />
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <div className="flex justify-between text-xs font-bold text-slate-600">
+                    <span>Applicable to Student Builders</span>
+                    <span className="text-slate-400 font-mono">8%</span>
+                  </div>
+                  <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                    <div className="h-full bg-slate-300 rounded-full w-[8%]" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-5">
                 {traditionalPoints.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3.5">
                     <XCircle className="w-5 h-5 text-rose-400 flex-shrink-0 mt-0.5" />
@@ -127,7 +154,29 @@ export default function WhyDifferent() {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              {/* Graphical Metric Comparison Bar */}
+              <div className="mb-6 p-4 rounded-2xl bg-teal-50/50 border border-teal-200/60 space-y-3">
+                <div className="space-y-1">
+                  <div className="flex justify-between text-xs font-bold text-teal-900">
+                    <span>Real-Time In-The-Trenches Truth</span>
+                    <span className="text-teal-700 font-mono">98%</span>
+                  </div>
+                  <div className="w-full h-2 rounded-full bg-teal-100 overflow-hidden">
+                    <div className="h-full bg-teal-600 rounded-full w-[98%]" />
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <div className="flex justify-between text-xs font-bold text-teal-900">
+                    <span>Transparent Bugs, Failures &amp; Costs</span>
+                    <span className="text-teal-700 font-mono">100%</span>
+                  </div>
+                  <div className="w-full h-2 rounded-full bg-teal-100 overflow-hidden">
+                    <div className="h-full bg-emerald-500 rounded-full w-[100%]" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-5">
                 {showPoints.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3.5">
                     <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
