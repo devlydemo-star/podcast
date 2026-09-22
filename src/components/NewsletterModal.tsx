@@ -90,7 +90,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
         ) : (
           <div>
             <div className="mb-4">
-              <BrandLogo avatarSize="w-12 h-12" textSize="text-base sm:text-lg" />
+              <BrandLogo withAvatar={false} textSize="text-base sm:text-lg" />
             </div>
 
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-50 border border-teal-200 mb-3">

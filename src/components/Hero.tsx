@@ -192,14 +192,18 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Host Circular Avatar Overlay (Bottom-Left) */}
-              <div className="absolute -bottom-5 -left-4 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white ring-2 ring-teal-400 group-hover:scale-105 transition-transform duration-300">
-                <Image
-                  src={SHOW_INFO.coverImage}
-                  alt="Show Badge"
-                  fill
-                  className="object-cover"
-                />
+              {/* Floating Graphic Card 3 (Bottom-Left): BROADCAST QUALITY */}
+              <div className="absolute -bottom-5 -left-4 bg-white/95 backdrop-blur-md border border-teal-200 shadow-xl rounded-2xl p-3 flex items-center gap-2.5 animate-float hidden sm:flex">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-500 text-white flex items-center justify-center font-black text-xs shadow-md shadow-teal-500/20">
+                  HQ
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-800">Direct Audio</span>
+                  </div>
+                  <span className="text-xs font-black text-teal-700">Studio Master</span>
+                </div>
               </div>
 
             </div>

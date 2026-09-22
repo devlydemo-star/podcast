@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Brand Info (5 cols) */}
           <div className="lg:col-span-5">
             <div className="mb-4">
-              <BrandLogo avatarSize="w-12 h-12" textSize="text-lg" />
+              <BrandLogo withAvatar={false} textSize="text-lg" />
             </div>
 
             <p className="text-sm font-semibold text-teal-700 mb-3">
