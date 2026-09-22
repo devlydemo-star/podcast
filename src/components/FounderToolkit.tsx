@@ -31,11 +31,19 @@ import {
   Lightbulb,
   Radio,
   Share2,
+  Download,
+  FileText,
+  Eye,
+  X,
 } from "lucide-react";
 import { SHOW_INFO } from "@/data/podcastData";
 
+const PDF_URL = "/The-Young-Founder-Show-Guest-Experience-Kit.pdf";
+const PDF_FILENAME = "The-Young-Founder-Show-Guest-Experience-Kit.pdf";
+
 export default function FounderToolkit() {
   const [activeTab, setActiveTab] = useState<"overview" | "prep" | "topics" | "journey" | "faq">("overview");
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
   
   // Interactive checklist state
   const [checklist, setChecklist] = useState({
@@ -200,9 +208,29 @@ export default function FounderToolkit() {
             <span className="text-gradient-teal">Before We Hit Record</span>
           </h2>
 
-          <p className="text-base sm:text-lg text-[#94A3B8] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#94A3B8] leading-relaxed mb-6">
             The official handbook for student founders, builders, and creators joining The Young Founder Show. No script, no pressure — just an honest conversation about your journey.
           </p>
+
+          {/* Quick PDF Action Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <button
+              onClick={() => setIsPdfModalOpen(true)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-lg shadow-[#2BF4C3]/20 hover:shadow-[#2BF4C3]/40 transition-all cursor-pointer transform hover:scale-102"
+            >
+              <Eye className="w-4 h-4 text-[#03100D]" />
+              <span>Read 15-Page PDF Online</span>
+            </button>
+
+            <a
+              href={PDF_URL}
+              download={PDF_FILENAME}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs bg-[#081717] hover:bg-[#0e2727] text-white border border-[#2BF4C3]/40 hover:border-[#2BF4C3] shadow-md transition-all cursor-pointer transform hover:scale-102"
+            >
+              <Download className="w-4 h-4 text-[#2BF4C3]" />
+              <span>Download PDF Kit (2.2 MB)</span>
+            </a>
+          </div>
         </div>
 
         {/* Interactive Tabs Navigation */}
@@ -241,6 +269,46 @@ export default function FounderToolkit() {
               <p className="text-xs sm:text-sm text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
                 Thank you for saying yes. You&apos;re joining a growing community of student founders, developers, and creators documenting the messy, uncertain, unglamorous middle of building something — not just the highlight reel at the end.
               </p>
+            </div>
+
+            {/* Featured PDF Booklet Card */}
+            <div className="glass-panel-hover rounded-3xl p-6 sm:p-8 border border-[#2BF4C3]/30 bg-gradient-to-r from-[#081717] via-[#051f1a] to-[#081717] max-w-4xl mx-auto shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-5">
+                <div className="w-16 h-20 rounded-xl bg-[#03100D] border border-[#2BF4C3]/40 flex flex-col items-center justify-center text-[#2BF4C3] flex-shrink-0 shadow-lg shadow-[#2BF4C3]/10">
+                  <FileText className="w-7 h-7 mb-1" />
+                  <span className="text-[9px] font-mono font-bold tracking-widest uppercase">PDF</span>
+                </div>
+                <div>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2BF4C3]/15 text-[#2BF4C3] text-[10px] font-bold uppercase tracking-wider mb-1.5">
+                    <Sparkles className="w-3 h-3" />
+                    <span>Official 15-Page Guide</span>
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">
+                    The Young Founder Show: Guest Experience Kit
+                  </h4>
+                  <p className="text-xs text-[#94A3B8] max-w-md mt-1">
+                    Download or read the comprehensive guide including conversation frameworks, preparation tips, builder principles, and FAQ.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 w-full md:w-auto justify-end">
+                <button
+                  onClick={() => setIsPdfModalOpen(true)}
+                  className="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-md transition-all cursor-pointer"
+                >
+                  <Eye className="w-4 h-4" />
+                  <span>Read Online</span>
+                </button>
+                <a
+                  href={PDF_URL}
+                  download={PDF_FILENAME}
+                  className="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs bg-[#081717] hover:bg-[#0d2626] text-white border border-white/20 hover:border-[#2BF4C3] transition-all cursor-pointer"
+                >
+                  <Download className="w-4 h-4 text-[#2BF4C3]" />
+                  <span>Download</span>
+                </a>
+              </div>
             </div>
 
             {/* 3 Core Guarantees */}
@@ -691,7 +759,7 @@ export default function FounderToolkit() {
               Submit your project details via our official guest intake form. We review every submission and reach out directly to schedule an episode.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-4">
               <a
                 href={SHOW_INFO.communityFormUrl}
                 target="_blank"
@@ -703,11 +771,21 @@ export default function FounderToolkit() {
                 <ExternalLink className="w-4 h-4" />
               </a>
 
-              <a
-                href="#who-its-for"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-sm bg-transparent hover:bg-white/5 text-white border border-white/20 hover:border-white transition-all cursor-pointer"
+              <button
+                onClick={() => setIsPdfModalOpen(true)}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 rounded-full font-bold text-sm bg-[#081717] hover:bg-[#0d2626] text-white border border-[#2BF4C3]/40 hover:border-[#2BF4C3] transition-all cursor-pointer"
               >
-                <span>Explore Who Listens</span>
+                <Eye className="w-4 h-4 text-[#2BF4C3]" />
+                <span>Read Full 15-Page PDF</span>
+              </button>
+
+              <a
+                href={PDF_URL}
+                download={PDF_FILENAME}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-sm bg-transparent hover:bg-white/5 text-[#94A3B8] hover:text-white border border-white/20 hover:border-white transition-all cursor-pointer"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download PDF</span>
               </a>
             </div>
 
@@ -718,6 +796,85 @@ export default function FounderToolkit() {
         </div>
 
       </div>
+
+      {/* Fullscreen PDF Reader Modal */}
+      {isPdfModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 bg-black/90 backdrop-blur-md animate-in fade-in duration-200">
+          <div className="bg-[#03100D] border border-[#2BF4C3]/30 rounded-3xl w-full max-w-5xl h-[92vh] flex flex-col shadow-2xl overflow-hidden relative">
+            
+            {/* Modal Top Bar */}
+            <div className="px-5 py-4 border-b border-white/10 flex items-center justify-between bg-[#081717]">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-[#2BF4C3]/15 border border-[#2BF4C3]/30 flex items-center justify-center text-[#2BF4C3]">
+                  <FileText className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-white">The Young Founder Show — Guest Experience Kit</h3>
+                  <p className="text-[11px] text-[#94A3B8]">15 Pages · Complete Guide &amp; Handbook</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <a
+                  href={PDF_URL}
+                  download={PDF_FILENAME}
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] transition-colors"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download</span>
+                </a>
+                <a
+                  href={PDF_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 transition-colors"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>Open in New Tab</span>
+                </a>
+                <button
+                  onClick={() => setIsPdfModalOpen(false)}
+                  className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-[#94A3B8] hover:text-white transition-colors cursor-pointer"
+                  aria-label="Close PDF Viewer"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Content: Embedded PDF iframe */}
+            <div className="flex-1 w-full bg-[#050e0c] relative">
+              <iframe
+                src={`${PDF_URL}#toolbar=1&navpanes=0`}
+                className="w-full h-full border-0"
+                title="The Young Founder Show Guest Experience Kit PDF"
+              />
+            </div>
+
+            {/* Mobile Footer helper */}
+            <div className="sm:hidden px-4 py-2.5 border-t border-white/10 bg-[#081717] flex items-center justify-between">
+              <a
+                href={PDF_URL}
+                download={PDF_FILENAME}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#2BF4C3]"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Download PDF</span>
+              </a>
+              <a
+                href={PDF_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-[#94A3B8]"
+              >
+                <span>New Tab</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+      )}
     </section>
   );
 }

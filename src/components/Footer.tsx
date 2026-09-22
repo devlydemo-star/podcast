@@ -129,6 +129,17 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a
+                  href="/The-Young-Founder-Show-Guest-Experience-Kit.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#2BF4C3] transition-colors inline-flex items-center gap-1.5"
+                >
+                  <span>Guest Kit PDF Guide</span>
+                  <span className="text-[10px] text-[#2BF4C3] font-mono">2.2MB</span>
+                </a>
+              </li>
+              <li>
                 <a href="#latest-episode" className="hover:text-[#2BF4C3] transition-colors">
                   Sample Episode (EP. 01)
                 </a>
