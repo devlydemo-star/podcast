@@ -32,20 +32,21 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Giant Styled Headline in Standard Green Color */}
+            {/* Giant Styled Headline faithfully styled after the Official Show Logo */}
             <div className="mb-6 leading-none">
-              <span className="text-2xl sm:text-3xl font-bold text-green-600 block mb-1">
+              <span className="text-2xl sm:text-3xl font-bold text-slate-500 block mb-1">
                 The
               </span>
-              <h1 className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-green-600 leading-[0.95] mb-1">
+              <h1 className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-slate-900 leading-[0.95] mb-1">
                 YOUNG
               </h1>
               <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
-                <span className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-green-600 leading-[0.95]">
+                <span className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight bg-gradient-to-r from-[#00C49F] via-[#1DD1B9] to-[#2BF4C3] bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(43,244,195,0.4)] leading-[0.95]">
                   FOUNDER
                 </span>
-                <span className="font-script text-4xl sm:text-6xl xl:text-7xl text-green-600 font-normal self-end pb-1 sm:pb-2">
+                <span className="font-script text-4xl sm:text-6xl xl:text-7xl text-slate-900 font-normal self-end pb-1 sm:pb-2 relative inline-block">
                   Show
+                  <span className="absolute bottom-0 left-0 right-0 h-[3px] sm:h-[4px] bg-[#2BF4C3] rounded-full shadow-[0_0_10px_rgba(43,244,195,0.8)]" />
                 </span>
                 <div className="self-center pb-1">
                   <SoundWaveBars className="h-6 sm:h-9" />
