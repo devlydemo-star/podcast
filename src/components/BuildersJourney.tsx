@@ -27,11 +27,11 @@ export default function BuildersJourney() {
       tagline: "Breaking Out of Tutorial Hell",
       description: "Curiosity sparks. You stop watching endless courses and start reading documentation, tinkering with terminal scripts, understanding fundamental computer science, and discovering how modern software really works.",
       mindset: "Curiosity is the greatest compounding interest in software engineering.",
-      icon: <BookOpen className="w-5 h-5 text-sky-600" />,
-      activeColor: "bg-sky-600 text-white shadow-lg shadow-sky-600/30",
-      activeRing: "ring-4 ring-sky-200",
-      iconBg: "bg-sky-50 border-sky-200",
-      textColor: "text-sky-600",
+      icon: <BookOpen className="w-5 h-5 text-slate-800" />,
+      activeColor: "bg-slate-900 text-white shadow-md",
+      activeRing: "ring-2 ring-[#2BF4C3]",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      textColor: "text-emerald-700",
     },
     {
       step: 2,
@@ -39,11 +39,11 @@ export default function BuildersJourney() {
       tagline: "Shipping The Embarrassing v0",
       description: "You dare to take ideas out of your notebook and write living code. You build apps you personally want to use, deploy to production, launch to strangers, and experience the thrill of creating something from scratch.",
       mindset: "If you aren't embarrassed by your first version, you launched too late.",
-      icon: <Hammer className="w-5 h-5 text-teal-600" />,
-      activeColor: "bg-teal-600 text-white shadow-lg shadow-teal-600/30",
-      activeRing: "ring-4 ring-teal-200",
-      iconBg: "bg-teal-50 border-teal-200",
-      textColor: "text-teal-600",
+      icon: <Hammer className="w-5 h-5 text-slate-800" />,
+      activeColor: "bg-slate-900 text-white shadow-md",
+      activeRing: "ring-2 ring-[#2BF4C3]",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      textColor: "text-emerald-700",
     },
     {
       step: 3,
@@ -51,11 +51,11 @@ export default function BuildersJourney() {
       tagline: "The Inevitable Trial",
       description: "Bugs at 2 AM. Zero traffic on launch day. Scope creep that threatens your motivation. Feature requests that lead nowhere. You realize building software is easy, but finding true product-market fit is brutally hard.",
       mindset: "Failure is not the opposite of success; it is the tuition you pay for insight.",
-      icon: <AlertTriangle className="w-5 h-5 text-orange-600" />,
-      activeColor: "bg-orange-600 text-white shadow-lg shadow-orange-600/30",
-      activeRing: "ring-4 ring-orange-200",
-      iconBg: "bg-orange-50 border-orange-200",
-      textColor: "text-orange-600",
+      icon: <AlertTriangle className="w-5 h-5 text-slate-800" />,
+      activeColor: "bg-slate-900 text-white shadow-md",
+      activeRing: "ring-2 ring-[#2BF4C3]",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      textColor: "text-emerald-700",
     },
     {
       step: 4,
@@ -63,11 +63,11 @@ export default function BuildersJourney() {
       tagline: "Feedback, Resilience & Pivoting",
       description: "You swallow your ego and listen obsessively to real users. You strip away vanity metrics, optimize architecture, rewrite clunky UX, and fix bottlenecks. You discover that resilience is a superpower.",
       mindset: "Listen to the truth in customer churn, not the polite applause of friends.",
-      icon: <RefreshCw className="w-5 h-5 text-purple-600" />,
-      activeColor: "bg-purple-600 text-white shadow-lg shadow-purple-600/30",
-      activeRing: "ring-4 ring-purple-200",
-      iconBg: "bg-purple-50 border-purple-200",
-      textColor: "text-purple-600",
+      icon: <RefreshCw className="w-5 h-5 text-slate-800" />,
+      activeColor: "bg-slate-900 text-white shadow-md",
+      activeRing: "ring-2 ring-[#2BF4C3]",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      textColor: "text-emerald-700",
     },
     {
       step: 5,
@@ -75,11 +75,11 @@ export default function BuildersJourney() {
       tagline: "Compounding & Extreme Agency",
       description: "You realize the secret is simple: never quit. You stack small daily wins, embrace extreme agency, refine your taste, and repeat the cycle with faster iteration and deeper conviction.",
       mindset: "Consistency beats motivation every single time. Keep shipping.",
-      icon: <Repeat className="w-5 h-5 text-pink-600" />,
-      activeColor: "bg-pink-600 text-white shadow-lg shadow-pink-600/30",
-      activeRing: "ring-4 ring-pink-200",
-      iconBg: "bg-pink-50 border-pink-200",
-      textColor: "text-pink-600",
+      icon: <Repeat className="w-5 h-5 text-slate-800" />,
+      activeColor: "bg-slate-900 text-white shadow-md",
+      activeRing: "ring-2 ring-[#2BF4C3]",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      textColor: "text-emerald-700",
     },
   ];
 
@@ -87,22 +87,21 @@ export default function BuildersJourney() {
 
   return (
     <section id="journey" className="py-24 relative bg-[#F8FAFC] border-t border-slate-200/80 overflow-hidden">
-      {/* Vibrant ambient background auroras */}
-      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-teal-400/15 via-indigo-400/10 to-pink-400/10 rounded-full blur-[180px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-gradient-to-tr from-amber-400/15 via-orange-400/10 to-sky-400/10 rounded-full blur-[170px] pointer-events-none" />
+      {/* Clean subtle ambient glow */}
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#2BF4C3]/5 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 mb-3.5 shadow-sm">
-            <Compass className="w-3.5 h-3.5 text-teal-600" />
-            <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#2BF4C3]/40 mb-3.5 shadow-xs">
+            <Compass className="w-3.5 h-3.5 text-emerald-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
               The Universal Framework
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            The Builder&apos;s <span className="text-gradient-vibrant">Journey</span>
+            The Builder&apos;s <span className="text-[#00C49F]">Journey</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             Every founder, developer, and creator walks this exact path. It is never a straight line from idea to exit—it is a continuous cycle of growth.
@@ -190,25 +189,25 @@ export default function BuildersJourney() {
                 </div>
               </div>
 
-              {/* Visual stage loop mini-flow with vibrant colors */}
-              <div className="flex items-center gap-2 pt-2 text-xs font-mono text-slate-500 overflow-x-auto pb-1">
-                <span className="font-bold text-teal-700">LOOP:</span>
-                <span className={activeStep === 1 ? "text-sky-600 font-black underline" : ""}>Learn</span>
+              {/* Visual stage loop mini-flow */}
+              <div className="flex items-center gap-2 pt-2 text-xs font-mono text-slate-600 overflow-x-auto pb-1">
+                <span className="font-bold text-slate-900">LOOP:</span>
+                <span className={activeStep === 1 ? "text-emerald-700 font-bold underline" : ""}>Learn</span>
                 <span>→</span>
-                <span className={activeStep === 2 ? "text-teal-600 font-black underline" : ""}>Build</span>
+                <span className={activeStep === 2 ? "text-emerald-700 font-bold underline" : ""}>Build</span>
                 <span>→</span>
-                <span className={activeStep === 3 ? "text-orange-600 font-black underline" : ""}>Fail</span>
+                <span className={activeStep === 3 ? "text-emerald-700 font-bold underline" : ""}>Fail</span>
                 <span>→</span>
-                <span className={activeStep === 4 ? "text-purple-600 font-black underline" : ""}>Improve</span>
+                <span className={activeStep === 4 ? "text-emerald-700 font-bold underline" : ""}>Improve</span>
                 <span>→</span>
-                <span className={activeStep === 5 ? "text-pink-600 font-black underline" : ""}>Repeat</span>
+                <span className={activeStep === 5 ? "text-emerald-700 font-bold underline" : ""}>Repeat</span>
                 <span className="text-slate-400">↺</span>
               </div>
             </div>
 
-            {/* Right Col: 3D Developer Desk Graphic with Vibrant Glowing Frame */}
+            {/* Right Col: 3D Developer Desk Graphic */}
             <div className="lg:col-span-5 relative flex justify-center">
-              <div className="relative w-full max-w-sm rounded-2xl overflow-hidden bg-gradient-to-tr from-sky-400 via-teal-400 via-purple-500 to-pink-500 p-[2.5px] shadow-2xl group/journey">
+              <div className="relative w-full max-w-sm rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-xl group/journey">
                 <div className="relative rounded-[14px] overflow-hidden bg-white">
                   <Image
                     src="/images/builder-journey-graphic.jpg"

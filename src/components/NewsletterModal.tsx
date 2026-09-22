@@ -61,7 +61,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
 
         {submitted ? (
           <div className="text-center py-6 animate-in zoom-in-95 duration-200">
-            <div className="w-14 h-14 rounded-full bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto mb-4 text-teal-700">
+            <div className="w-14 h-14 rounded-full bg-[#2BF4C3]/10 border border-[#2BF4C3]/30 flex items-center justify-center mx-auto mb-4 text-[#00C49F]">
               <Users className="w-7 h-7" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Welcome aboard, {name}!</h3>
@@ -75,14 +75,14 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
               rel="noopener noreferrer"
               className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-slate-900 hover:bg-slate-800 text-white shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
             >
-              <Users className="w-4 h-4 text-teal-400" />
+              <Users className="w-4 h-4 text-[#2BF4C3]" />
               <span>Complete Application Form</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
             <button
               onClick={onClose}
-              className="text-xs text-slate-500 hover:text-teal-700 cursor-pointer transition-colors"
+              className="text-xs text-slate-500 hover:text-[#00C49F] cursor-pointer transition-colors"
             >
               Back to Show
             </button>
@@ -93,9 +93,9 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
               <BrandLogo withAvatar={false} textSize="text-base sm:text-lg" />
             </div>
 
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-50 border border-teal-200 mb-3">
-              <Bell className="w-3 h-3 text-teal-600" />
-              <span className="text-[10px] font-bold uppercase tracking-wider text-teal-700">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2BF4C3]/10 border border-[#2BF4C3]/30 mb-3">
+              <Bell className="w-3 h-3 text-[#00C49F]" />
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-900">
                 Founder VIP List &amp; Community
               </span>
             </div>
@@ -117,7 +117,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your Name"
-                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-teal-500 focus:bg-white"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-[#2BF4C3] focus:ring-1 focus:ring-[#2BF4C3]/30 focus:bg-white"
                 />
               </div>
 
@@ -130,7 +130,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="founder@example.com"
-                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-teal-500 focus:bg-white"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-[#2BF4C3] focus:ring-1 focus:ring-[#2BF4C3]/30 focus:bg-white"
                 />
               </div>
 
@@ -140,7 +140,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
                 type="submit"
                 className="w-full py-3.5 rounded-xl font-bold text-sm bg-slate-900 hover:bg-slate-800 text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
-                <Users className="w-4 h-4 text-teal-400" />
+                <Users className="w-4 h-4 text-[#2BF4C3]" />
                 <span>Apply to Join Community</span>
               </button>
             </form>

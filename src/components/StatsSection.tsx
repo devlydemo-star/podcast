@@ -6,60 +6,60 @@ import { Code, Flame, Radio, Users } from "lucide-react";
 export default function StatsSection() {
   const pillars = [
     {
-      icon: <Code className="w-5 h-5 text-teal-600" />,
+      icon: <Code className="w-5 h-5 text-emerald-700" />,
       title: "Student Builders",
       subtitle: "Developers & founders",
       badge: "Builders",
-      bgGradient: "from-teal-50 to-emerald-100/60",
-      borderAccent: "border-teal-200",
-      strokeColor: "#0D9488",
-      dotColor: "#0D9488",
+      bgGradient: "from-slate-50/80 to-white",
+      borderAccent: "border-slate-200",
+      strokeColor: "#00C49F",
+      dotColor: "#2BF4C3",
       sparkline: "M0 18 Q 20 8, 40 14 T 80 4",
-      tagColor: "bg-teal-50 text-teal-700 border-teal-200",
+      tagColor: "bg-slate-50 text-slate-800 border-slate-200",
     },
     {
-      icon: <Flame className="w-5 h-5 text-purple-600" />,
+      icon: <Flame className="w-5 h-5 text-emerald-700" />,
       title: "Unfiltered Reality",
       subtitle: "The climb before success",
       badge: "100% Raw",
-      bgGradient: "from-purple-50 to-indigo-100/60",
-      borderAccent: "border-purple-200",
-      strokeColor: "#7C3AED",
-      dotColor: "#7C3AED",
+      bgGradient: "from-slate-50/80 to-white",
+      borderAccent: "border-slate-200",
+      strokeColor: "#00C49F",
+      dotColor: "#2BF4C3",
       sparkline: "M0 16 Q 20 18, 40 10 T 80 2",
-      tagColor: "bg-purple-50 text-purple-700 border-purple-200",
+      tagColor: "bg-slate-50 text-slate-800 border-slate-200",
     },
     {
-      icon: <Radio className="w-5 h-5 text-amber-600" />,
+      icon: <Radio className="w-5 h-5 text-emerald-700" />,
       title: "Weekly Drops",
       subtitle: "Spotify & YouTube",
       badge: "Weekly",
-      bgGradient: "from-amber-50 to-orange-100/60",
-      borderAccent: "border-amber-200",
-      strokeColor: "#EA580C",
-      dotColor: "#EA580C",
+      bgGradient: "from-slate-50/80 to-white",
+      borderAccent: "border-slate-200",
+      strokeColor: "#00C49F",
+      dotColor: "#2BF4C3",
       sparkline: "M0 14 Q 20 6, 40 12 T 80 4",
-      tagColor: "bg-amber-50 text-amber-700 border-amber-200",
+      tagColor: "bg-slate-50 text-slate-800 border-slate-200",
     },
     {
-      icon: <Users className="w-5 h-5 text-sky-600" />,
+      icon: <Users className="w-5 h-5 text-emerald-700" />,
       title: "The Movement",
       subtitle: "Building together",
       badge: "Community",
-      bgGradient: "from-sky-50 to-blue-100/60",
-      borderAccent: "border-sky-200",
-      strokeColor: "#0284C7",
-      dotColor: "#0284C7",
+      bgGradient: "from-slate-50/80 to-white",
+      borderAccent: "border-slate-200",
+      strokeColor: "#00C49F",
+      dotColor: "#2BF4C3",
       sparkline: "M0 18 Q 20 12, 40 6 T 80 2",
-      tagColor: "bg-sky-50 text-sky-700 border-sky-200",
+      tagColor: "bg-slate-50 text-slate-800 border-slate-200",
     },
   ];
 
   return (
     <section className="relative z-20 -mt-6 sm:-mt-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="bg-white border-2 border-slate-200/90 hover:border-teal-500/30 transition-all rounded-3xl p-6 sm:p-7 shadow-2xl shadow-slate-200/80 relative overflow-hidden">
-        {/* Top vibrant multi-color rainbow border */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-500 via-purple-500 via-amber-500 to-sky-500" />
+      <div className="bg-white border border-slate-200 hover:border-[#2BF4C3]/40 transition-all rounded-3xl p-6 sm:p-7 shadow-xl shadow-slate-100 relative overflow-hidden">
+        {/* Top clean logo mint green accent bar */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-[#2BF4C3]" />
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
           {pillars.map((item, idx) => (

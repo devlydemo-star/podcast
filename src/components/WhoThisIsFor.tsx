@@ -43,96 +43,96 @@ export default function WhoThisIsFor() {
       title: "Student Developers",
       description: "People learning to build software and AI products, breaking out of tutorial hell late into the night.",
       badge: "Engineering",
-      icon: <Terminal className="w-6 h-6 text-teal-600" />,
-      gradient: "from-teal-500/15 via-emerald-500/10 to-transparent",
+      icon: <Terminal className="w-6 h-6 text-slate-800" />,
+      gradient: "from-[#2BF4C3]/10 via-transparent to-transparent",
       recommendedFocus: "Ep. 01: Code Architecture Post-Mortems",
       primaryStack: "Next.js, TypeScript, Tailwind, Supabase, Git",
       actionMission: "Ship an uncomfortably early v0 directly to production this weekend.",
-      iconBg: "bg-teal-50 border-teal-200 text-teal-600",
-      badgeColor: "bg-teal-50 text-teal-700 border-teal-200",
-      activeBtn: "bg-teal-600 text-white shadow-lg shadow-teal-600/30",
-      activeRing: "border-teal-500 ring-2 ring-teal-200",
-      accentText: "text-teal-600",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      badgeColor: "bg-slate-100 text-slate-700 border-slate-200",
+      activeBtn: "bg-slate-900 text-white shadow-md",
+      activeRing: "border-[#2BF4C3] ring-2 ring-[#2BF4C3]/30",
+      accentText: "text-emerald-700",
     },
     {
       id: "founders",
       title: "Student Founders",
       description: "People validating ideas, talking to early users, shipping v0s, and launching products while in school.",
       badge: "Early Stage",
-      icon: <Rocket className="w-6 h-6 text-purple-600" />,
-      gradient: "from-purple-500/15 via-indigo-500/10 to-transparent",
+      icon: <Rocket className="w-6 h-6 text-slate-800" />,
+      gradient: "from-[#2BF4C3]/10 via-transparent to-transparent",
       recommendedFocus: "Founder Toolkit: 15-Page Guest Blueprint",
       primaryStack: "Product Analytics, Stripe Billing, Linear, PostHog",
       actionMission: "Interview 10 real users with zero pitching; uncover actual pain points.",
-      iconBg: "bg-purple-50 border-purple-200 text-purple-600",
-      badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
-      activeBtn: "bg-purple-600 text-white shadow-lg shadow-purple-600/30",
-      activeRing: "border-purple-500 ring-2 ring-purple-200",
-      accentText: "text-purple-600",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      badgeColor: "bg-slate-100 text-slate-700 border-slate-200",
+      activeBtn: "bg-slate-900 text-white shadow-md",
+      activeRing: "border-[#2BF4C3] ring-2 ring-[#2BF4C3]/30",
+      accentText: "text-emerald-700",
     },
     {
       id: "creators",
       title: "Creators & Solo Hackers",
       description: "People building in public, making videos, sharing their work openly, and building an audience from day one.",
       badge: "Public Build",
-      icon: <Share2 className="w-6 h-6 text-pink-600" />,
-      gradient: "from-pink-500/15 via-rose-500/10 to-transparent",
+      icon: <Share2 className="w-6 h-6 text-slate-800" />,
+      gradient: "from-[#2BF4C3]/10 via-transparent to-transparent",
       recommendedFocus: "Community Spotlight: Building in Public",
       primaryStack: "X (Twitter), YouTube, Loom, Substack, Open Metrics",
       actionMission: "Publish your first development log with zero vanity filters.",
-      iconBg: "bg-pink-50 border-pink-200 text-pink-600",
-      badgeColor: "bg-pink-50 text-pink-700 border-pink-200",
-      activeBtn: "bg-pink-600 text-white shadow-lg shadow-pink-600/30",
-      activeRing: "border-pink-500 ring-2 ring-pink-200",
-      accentText: "text-pink-600",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      badgeColor: "bg-slate-100 text-slate-700 border-slate-200",
+      activeBtn: "bg-slate-900 text-white shadow-md",
+      activeRing: "border-[#2BF4C3] ring-2 ring-[#2BF4C3]/30",
+      accentText: "text-emerald-700",
     },
     {
       id: "entrepreneurs",
       title: "Future Entrepreneurs",
       description: "People dreaming of building sustainable companies without waiting for permission, degrees, or pedigree.",
       badge: "High Agency",
-      icon: <Lightbulb className="w-6 h-6 text-amber-600" />,
-      gradient: "from-amber-500/15 via-orange-500/10 to-transparent",
+      icon: <Lightbulb className="w-6 h-6 text-slate-800" />,
+      gradient: "from-[#2BF4C3]/10 via-transparent to-transparent",
       recommendedFocus: "Ep. 03: Unit Economics for Bootstrappers",
       primaryStack: "B2B SaaS, Micro-SaaS Tooling, Direct Distribution",
       actionMission: "Validate demand before writing a single line of backend logic.",
-      iconBg: "bg-amber-50 border-amber-200 text-amber-600",
-      badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
-      activeBtn: "bg-amber-600 text-white shadow-lg shadow-amber-600/30",
-      activeRing: "border-amber-500 ring-2 ring-amber-200",
-      accentText: "text-amber-600",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      badgeColor: "bg-slate-100 text-slate-700 border-slate-200",
+      activeBtn: "bg-slate-900 text-white shadow-md",
+      activeRing: "border-[#2BF4C3] ring-2 ring-[#2BF4C3]/30",
+      accentText: "text-emerald-700",
     },
     {
       id: "learners",
       title: "Self Learners",
       description: "People teaching themselves complex engineering, systems design, design taste, and modern technology.",
       badge: "Compounding",
-      icon: <BookOpen className="w-6 h-6 text-sky-600" />,
-      gradient: "from-sky-500/15 via-blue-500/10 to-transparent",
+      icon: <BookOpen className="w-6 h-6 text-slate-800" />,
+      gradient: "from-[#2BF4C3]/10 via-transparent to-transparent",
       recommendedFocus: "The 5-Stage Universal Builder Framework",
       primaryStack: "AI LLM APIs, Deep Technical RFCs, Open Source Kernels",
       actionMission: "Read one open source repo architecture and recreate its core algorithm.",
-      iconBg: "bg-sky-50 border-sky-200 text-sky-600",
-      badgeColor: "bg-sky-50 text-sky-700 border-sky-200",
-      activeBtn: "bg-sky-600 text-white shadow-lg shadow-sky-600/30",
-      activeRing: "border-sky-500 ring-2 ring-sky-200",
-      accentText: "text-sky-600",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      badgeColor: "bg-slate-100 text-slate-700 border-slate-200",
+      activeBtn: "bg-slate-900 text-white shadow-md",
+      activeRing: "border-[#2BF4C3] ring-2 ring-[#2BF4C3]/30",
+      accentText: "text-emerald-700",
     },
     {
       id: "builders",
       title: "All-Round Builders",
       description: "Anyone obsessed with turning imagination into reality and creating something meaningful from nothing.",
       badge: "Execution",
-      icon: <Hammer className="w-6 h-6 text-emerald-600" />,
-      gradient: "from-emerald-500/15 via-teal-500/10 to-transparent",
+      icon: <Hammer className="w-6 h-6 text-slate-800" />,
+      gradient: "from-[#2BF4C3]/10 via-transparent to-transparent",
       recommendedFocus: "Movement Principles: The Extreme Agency Oath",
       primaryStack: "Multi-disciplinary Problem Solving, Fast Prototyping",
       actionMission: "Commit code daily. Let the compounding momentum do the rest.",
-      iconBg: "bg-emerald-50 border-emerald-200 text-emerald-600",
-      badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
-      activeBtn: "bg-emerald-600 text-white shadow-lg shadow-emerald-600/30",
-      activeRing: "border-emerald-500 ring-2 ring-emerald-200",
-      accentText: "text-emerald-600",
+      iconBg: "bg-slate-50 border-slate-200 text-slate-800",
+      badgeColor: "bg-slate-100 text-slate-700 border-slate-200",
+      activeBtn: "bg-slate-900 text-white shadow-md",
+      activeRing: "border-[#2BF4C3] ring-2 ring-[#2BF4C3]/30",
+      accentText: "text-emerald-700",
     },
   ];
 
@@ -140,36 +140,35 @@ export default function WhoThisIsFor() {
 
   return (
     <section id="who-its-for" className="py-24 relative bg-[#F8FAFC] border-t border-slate-200/80 overflow-hidden">
-      {/* Vibrant ambient auroras */}
-      <div className="absolute top-1/3 left-10 w-[600px] h-[600px] bg-gradient-to-br from-teal-400/15 via-purple-400/10 to-pink-400/10 rounded-full blur-[180px] pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-[550px] h-[550px] bg-gradient-to-tr from-amber-400/15 via-sky-400/10 to-emerald-400/10 rounded-full blur-[170px] pointer-events-none" />
+      {/* Clean brand ambient glow */}
+      <div className="absolute top-1/3 left-10 w-[500px] h-[500px] bg-[#2BF4C3]/5 rounded-full blur-[170px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 mb-4 shadow-sm">
-            <Users className="w-3.5 h-3.5 text-teal-600" />
-            <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#2BF4C3]/40 mb-4 shadow-xs">
+            <Users className="w-3.5 h-3.5 text-emerald-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
               The Ecosystem &amp; Builder Personas
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Who This <span className="text-gradient-vibrant">Is For</span>
+            Who This <span className="text-[#00C49F]">Is For</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             The Young Founder Show isn&apos;t for spectators or corporate theorists. It exists for the young, relentless builders actively engineering the future from dorm rooms and late-night desks.
           </p>
         </div>
 
-        {/* Master 3D Ecosystem Showcase & Interactive Persona Card with Vibrant Gradient Frame */}
-        <div className="bg-white rounded-3xl border-2 border-teal-500/30 shadow-2xl overflow-hidden max-w-5xl mx-auto mb-16 relative">
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-500 via-indigo-500 via-pink-500 to-amber-500 z-10" />
+        {/* Master 3D Ecosystem Showcase & Interactive Persona Card */}
+        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden max-w-5xl mx-auto mb-16 relative">
+          <div className="absolute top-0 left-0 right-0 h-1 bg-[#2BF4C3]" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-10">
-            {/* Left Col: 3D Community Artwork with Glowing Frame */}
+            {/* Left Col: 3D Community Artwork */}
             <div className="lg:col-span-6 relative">
-              <div className="relative rounded-2xl overflow-hidden bg-gradient-to-tr from-teal-400 via-indigo-500 to-pink-500 p-[2.5px] shadow-xl group/eco">
+              <div className="relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-md group/eco">
                 <div className="relative rounded-[14px] overflow-hidden bg-white">
                   <Image
                     src="/images/ecosystem-3d.jpg"

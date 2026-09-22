@@ -73,7 +73,7 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
               >
                 <span>{link.name}</span>
                 {link.active && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-500 via-indigo-500 to-pink-500 rounded-full" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#2BF4C3] rounded-full shadow-[0_0_6px_rgba(43,244,195,0.7)]" />
                 )}
               </a>
             ))}

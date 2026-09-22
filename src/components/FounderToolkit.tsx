@@ -72,36 +72,36 @@ export default function FounderToolkit() {
       id: "overview",
       label: "Overview & Guarantees",
       icon: Compass,
-      activeColor: "bg-teal-600 text-white shadow-md shadow-teal-600/30",
-      glowColor: "text-teal-600",
+      activeColor: "bg-slate-900 text-white shadow-md ring-2 ring-[#2BF4C3]/30",
+      glowColor: "text-[#2BF4C3]",
     },
     {
       id: "prep",
       label: "Recording Checklist",
       icon: Mic,
-      activeColor: "bg-sky-600 text-white shadow-md shadow-sky-600/30",
-      glowColor: "text-sky-600",
+      activeColor: "bg-slate-900 text-white shadow-md ring-2 ring-[#2BF4C3]/30",
+      glowColor: "text-[#2BF4C3]",
     },
     {
       id: "topics",
       label: "Discussion Guide",
       icon: MessageSquare,
-      activeColor: "bg-purple-600 text-white shadow-md shadow-purple-600/30",
-      glowColor: "text-purple-600",
+      activeColor: "bg-slate-900 text-white shadow-md ring-2 ring-[#2BF4C3]/30",
+      glowColor: "text-[#2BF4C3]",
     },
     {
       id: "journey",
       label: "5-Step Guest Journey",
       icon: Layers,
-      activeColor: "bg-amber-600 text-white shadow-md shadow-amber-600/30",
-      glowColor: "text-amber-600",
+      activeColor: "bg-slate-900 text-white shadow-md ring-2 ring-[#2BF4C3]/30",
+      glowColor: "text-[#2BF4C3]",
     },
     {
       id: "faq",
       label: "Guest FAQ & Apply",
       icon: HelpCircle,
-      activeColor: "bg-indigo-600 text-white shadow-md shadow-indigo-600/30",
-      glowColor: "text-indigo-600",
+      activeColor: "bg-slate-900 text-white shadow-md ring-2 ring-[#2BF4C3]/30",
+      glowColor: "text-[#2BF4C3]",
     },
   ] as const;
 
@@ -110,72 +110,72 @@ export default function FounderToolkit() {
       icon: Rocket,
       title: "Startups",
       desc: "From first spark of an idea to onboarding your first paying customer.",
-      gradient: "from-orange-500/10 to-transparent",
-      borderColor: "border-orange-200 hover:border-orange-300",
-      badgeColor: "bg-orange-50 text-orange-700 border-orange-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: Code2,
       title: "Technology",
       desc: "The tools, frameworks, and modern stacks builders rely on day-to-day.",
-      gradient: "from-cyan-500/10 to-transparent",
-      borderColor: "border-cyan-200 hover:border-cyan-300",
-      badgeColor: "bg-cyan-50 text-cyan-700 border-cyan-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: Bot,
       title: "AI",
       desc: "Where artificial intelligence is heading and how builders harness it today.",
-      gradient: "from-purple-500/10 to-transparent",
-      borderColor: "border-purple-200 hover:border-purple-300",
-      badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: GraduationCap,
       title: "Learning",
       desc: "The hard-earned skills, trial-and-error, and lessons that actually stick.",
-      gradient: "from-emerald-500/10 to-transparent",
-      borderColor: "border-emerald-200 hover:border-emerald-300",
-      badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: Target,
       title: "Productivity",
       desc: "Getting more done with hyper-focused effort while balancing student life.",
-      gradient: "from-amber-500/10 to-transparent",
-      borderColor: "border-amber-200 hover:border-amber-300",
-      badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: Sprout,
       title: "Personal Growth",
       desc: "The founder psychology, mindset shifts, and emotional stamina behind the work.",
-      gradient: "from-teal-500/10 to-transparent",
-      borderColor: "border-teal-200 hover:border-teal-300",
-      badgeColor: "bg-teal-50 text-teal-700 border-teal-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: Hammer,
       title: "Building in Public",
       desc: "Sharing raw progress, metrics, and vulnerabilities before it's polished.",
-      gradient: "from-sky-500/10 to-transparent",
-      borderColor: "border-sky-200 hover:border-sky-300",
-      badgeColor: "bg-sky-50 text-sky-700 border-sky-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
     {
       icon: Lightbulb,
       title: "Entrepreneurship",
       desc: "Turning rough napkin sketches into viable, compounding real-world momentum.",
-      gradient: "from-yellow-500/10 to-transparent",
-      borderColor: "border-yellow-200 hover:border-yellow-300",
-      badgeColor: "bg-yellow-50 text-yellow-700 border-yellow-200",
+      gradient: "from-slate-50 to-white",
+      borderColor: "border-slate-200 hover:border-[#2BF4C3]",
+      badgeColor: "bg-slate-100 text-slate-800 border-slate-200 group-hover:text-[#00C49F]",
       glow: "hover:shadow-md",
     },
   ];
@@ -274,28 +274,26 @@ export default function FounderToolkit() {
 
   return (
     <section id="toolkit" className="py-24 relative bg-[#F8FAFC] border-t border-slate-200/80 overflow-hidden">
-      {/* Subtle ambient lighting */}
-      <div className="absolute top-10 left-10 w-[600px] h-[400px] bg-teal-500/5 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[650px] h-[450px] bg-indigo-500/5 rounded-full blur-[170px] pointer-events-none" />
-      <div className="absolute bottom-10 left-1/3 w-[700px] h-[400px] bg-sky-500/5 rounded-full blur-[160px] pointer-events-none" />
+      {/* Subtle ambient brand glow */}
+      <div className="absolute top-10 left-10 w-[600px] h-[400px] bg-[#2BF4C3]/5 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           
-          {/* Eyebrow Badge with Vibrant Gradient */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 shadow-sm mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-teal-600" />
-            <span className="text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
+          {/* Eyebrow Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-[#00C49F]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-slate-800">
               Guest Experience Kit &amp; Founder Toolkit
             </span>
           </div>
 
-          {/* Clean Corporate Headline with Vibrant Gradient */}
+          {/* Clean Corporate Headline */}
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-4">
             Everything You Need To Know <br className="hidden sm:inline" />
-            <span className="text-gradient-vibrant">
+            <span className="text-[#00C49F]">
               Before We Hit Record
             </span>
           </h2>
@@ -434,9 +432,9 @@ export default function FounderToolkit() {
                   </div>
                 </div>
 
-                {/* Right: 3D Isometric Toolkit Artwork Showcase with Vibrant Gradient Frame */}
+                {/* Right: 3D Isometric Toolkit Artwork Showcase */}
                 <div className="lg:col-span-5 relative flex justify-center">
-                  <div className="relative w-full max-w-sm rounded-2xl overflow-hidden bg-gradient-to-tr from-teal-400 via-indigo-500 to-pink-500 p-[2.5px] shadow-2xl group/img">
+                  <div className="relative w-full max-w-sm rounded-2xl overflow-hidden border-2 border-slate-200 hover:border-[#2BF4C3]/60 shadow-xl group/img bg-white p-1">
                     <div className="relative rounded-[14px] overflow-hidden bg-white">
                       <Image
                         src="/images/founder-toolkit-3d.jpg"
@@ -449,12 +447,12 @@ export default function FounderToolkit() {
                       
                       {/* Floating verified badge */}
                       <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-center gap-1.5">
-                        <div className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
+                        <div className="w-2 h-2 rounded-full bg-[#2BF4C3] animate-pulse" />
                         <span className="text-[11px] font-black text-slate-900 uppercase tracking-wider">Official Kit V2</span>
                       </div>
 
                       {/* Floating page pill */}
-                      <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md border border-white/20 shadow-md text-white text-[11px] font-mono font-bold">
+                      <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md border border-white/20 shadow-md text-[#2BF4C3] text-[11px] font-mono font-bold">
                         15 Comprehensive Pages
                       </div>
                     </div>

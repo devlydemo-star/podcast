@@ -44,21 +44,21 @@ export default function WhyDifferent() {
 
   return (
     <section id="why-different" className="py-24 relative bg-white border-t border-slate-200/80">
-      {/* Vibrant ambient background glow */}
-      <div className="absolute top-1/2 right-1/4 w-[550px] h-[550px] bg-gradient-to-br from-teal-500/10 via-purple-500/10 to-pink-500/10 rounded-full blur-[170px] pointer-events-none" />
+      {/* Clean subtle ambient glow */}
+      <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-[#2BF4C3]/5 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 mb-3.5 shadow-sm">
-            <Split className="w-3.5 h-3.5 text-teal-600" />
-            <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#2BF4C3]/40 mb-3.5 shadow-xs">
+            <Split className="w-3.5 h-3.5 text-emerald-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
               The Core Difference
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Why This Show <span className="text-gradient-vibrant">Is Different</span>
+            Why This Show <span className="text-[#00C49F]">Is Different</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             The internet is flooded with advice from billionaires who forgot what it feels like to ship an MVP with zero users. We do things differently.
@@ -68,8 +68,8 @@ export default function WhyDifferent() {
         {/* Comparison Dual-Cards Grid with Centered VS Badge */}
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
-          {/* Centered Desktop VS Floating Pill with Vibrant Gradient */}
-          <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-gradient-to-tr from-rose-500 via-purple-600 to-teal-500 text-white font-black text-xs items-center justify-center shadow-xl ring-4 ring-white">
+          {/* Centered Desktop VS Floating Pill */}
+          <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-slate-900 text-white font-black text-xs items-center justify-center shadow-xl ring-4 ring-white border border-slate-700">
             VS
           </div>
 

@@ -69,35 +69,35 @@
 }
 
 .text-gradient-teal {
-  background: linear-gradient(135deg, #0F172A 15%, #0D9488 75%, #059669 100%);
+  background: linear-gradient(135deg, #0F172A 20%, #00C49F 70%, #2BF4C3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-vibrant {
-  background: linear-gradient(135deg, #0D9488 0%, #2563EB 35%, #7C3AED 70%, #DB2777 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #0D9488 45%, #2BF4C3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-sunset {
-  background: linear-gradient(135deg, #D97706 0%, #EA580C 50%, #E11D48 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #00C49F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-electric {
-  background: linear-gradient(135deg, #7C3AED 0%, #2563EB 50%, #06B6D4 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #00C49F 50%, #2BF4C3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-hero-gradient {
-  background: radial-gradient(circle at 75% 35%, rgba(13, 148, 136, 0.12) 0%, rgba(99, 102, 241, 0.08) 35%, rgba(244, 63, 94, 0.05) 65%, #F8FAFC 100%);
+  background: radial-gradient(circle at 75% 35%, rgba(43, 244, 195, 0.08) 0%, rgba(13, 148, 136, 0.03) 40%, #F8FAFC 100%);
 }
 
 .bg-aurora-vibrant {
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.08) 0%, rgba(59, 130, 246, 0.08) 25%, rgba(168, 85, 247, 0.08) 50%, rgba(244, 63, 94, 0.08) 75%, rgba(245, 158, 11, 0.08) 100%);
+  background: linear-gradient(135deg, rgba(43, 244, 195, 0.05) 0%, rgba(13, 148, 136, 0.03) 50%, rgba(248, 250, 252, 1) 100%);
 }
 
 /* Audio Waveform Animations */

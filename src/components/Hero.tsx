@@ -13,9 +13,9 @@ export default function Hero() {
       {/* Background tech grid pattern */}
       <div className="absolute inset-0 bg-tech-grid opacity-35 pointer-events-none" />
 
-      {/* Vibrant multi-color ambient lighting glows */}
-      <div className="absolute top-1/4 right-[10%] w-[650px] h-[650px] bg-gradient-to-br from-teal-400/20 via-indigo-400/15 to-pink-400/15 rounded-full blur-[170px] pointer-events-none" />
-      <div className="absolute top-1/3 left-5 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-400/20 via-sky-400/15 to-purple-400/15 rounded-full blur-[160px] pointer-events-none" />
+      {/* Clean subtle brand ambient lighting */}
+      <div className="absolute top-1/4 right-[10%] w-[600px] h-[600px] bg-[#2BF4C3]/10 rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute top-1/3 left-5 w-[450px] h-[450px] bg-[#00C49F]/5 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -23,11 +23,11 @@ export default function Hero() {
           {/* Left Column: Text & Buttons (7 cols) */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             
-            {/* Vibrant Pill Badge: BUILT FOR STUDENT FOUNDERS */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 shadow-sm mb-7">
-              <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
-              <Sparkles className="w-3.5 h-3.5 text-teal-600" />
-              <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
+            {/* Clean Pill Badge: BUILT FOR STUDENT FOUNDERS */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#2BF4C3]/40 shadow-xs mb-7">
+              <span className="w-2 h-2 rounded-full bg-[#2BF4C3] animate-pulse" />
+              <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
                 Built for Student Founders &amp; Builders
               </span>
             </div>
@@ -83,13 +83,13 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Multi-colored animated equalizer bars */}
+              {/* Animated equalizer bars in logo mint green */}
               <div className="flex items-end gap-1 h-5 px-2">
-                <span className="w-1 bg-teal-500 rounded-full wave-bar" style={{ animationDelay: "0s" }} />
-                <span className="w-1 bg-sky-500 rounded-full wave-bar" style={{ animationDelay: "0.2s" }} />
-                <span className="w-1 bg-indigo-500 rounded-full wave-bar" style={{ animationDelay: "0.4s" }} />
-                <span className="w-1 bg-purple-500 rounded-full wave-bar" style={{ animationDelay: "0.1s" }} />
-                <span className="w-1 bg-pink-500 rounded-full wave-bar" style={{ animationDelay: "0.3s" }} />
+                <span className="w-1 bg-[#2BF4C3] rounded-full wave-bar" style={{ animationDelay: "0s" }} />
+                <span className="w-1 bg-[#00C49F] rounded-full wave-bar" style={{ animationDelay: "0.2s" }} />
+                <span className="w-1 bg-[#2BF4C3] rounded-full wave-bar" style={{ animationDelay: "0.4s" }} />
+                <span className="w-1 bg-[#00C49F] rounded-full wave-bar" style={{ animationDelay: "0.1s" }} />
+                <span className="w-1 bg-[#2BF4C3] rounded-full wave-bar" style={{ animationDelay: "0.3s" }} />
               </div>
             </div>
 
@@ -153,12 +153,9 @@ export default function Hero() {
           <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
             <div className="relative w-full max-w-[480px]">
               
-              {/* Outer multi-color pulsing aura */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-500/20 via-indigo-500/20 to-pink-500/20 blur-2xl scale-100 pointer-events-none" />
-
-              {/* Main 3D Studio Card Graphic with Vibrant Gradient Border */}
-              <div className="relative aspect-square w-full rounded-3xl overflow-hidden bg-gradient-to-tr from-teal-400 via-indigo-500 to-pink-500 p-[3px] shadow-2xl group">
-                <div className="relative w-full h-full rounded-[21px] overflow-hidden bg-white">
+              {/* Clean Studio Card Graphic */}
+              <div className="relative aspect-square w-full rounded-3xl overflow-hidden bg-white border-2 border-slate-200/90 shadow-2xl hover:border-[#2BF4C3]/50 transition-colors group">
+                <div className="relative w-full h-full rounded-[22px] overflow-hidden bg-white">
                   <Image
                     src="/images/hero-studio-graphic.jpg"
                     alt="The Young Founder Show 3D Tech Podcast Studio"
@@ -187,13 +184,13 @@ export default function Hero() {
               </div>
 
               {/* Floating Graphic Card 2 (Bottom-Right): STUDENT FOUNDERS */}
-              <div className="absolute -bottom-6 -right-5 bg-white/95 backdrop-blur-md border border-indigo-200 shadow-xl rounded-2xl p-3.5 flex items-center gap-3 animate-float-delayed hidden sm:flex">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 text-white flex items-center justify-center font-black text-sm shadow-md shadow-indigo-500/30">
-                  <Sparkles className="w-5 h-5 text-amber-300" />
+              <div className="absolute -bottom-6 -right-5 bg-white/95 backdrop-blur-md border border-slate-200 shadow-xl rounded-2xl p-3.5 flex items-center gap-3 animate-float-delayed hidden sm:flex">
+                <div className="w-10 h-10 rounded-xl bg-slate-900 text-[#2BF4C3] flex items-center justify-center font-black text-sm shadow-md">
+                  <Sparkles className="w-5 h-5 text-[#2BF4C3]" />
                 </div>
                 <div>
                   <p className="text-xs font-black text-slate-900">Student Builders</p>
-                  <p className="text-[10px] font-bold text-indigo-700">100% Free · No Fluff</p>
+                  <p className="text-[10px] font-bold text-slate-600">100% Free · No Fluff</p>
                 </div>
               </div>
 

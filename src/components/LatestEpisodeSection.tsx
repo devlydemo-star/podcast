@@ -91,32 +91,31 @@ export default function LatestEpisodeSection() {
   return (
     <section id="latest-episode" className="py-24 relative bg-[#F8FAFC] border-t border-slate-200/80 overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-1/4 w-[600px] h-[500px] bg-teal-500/5 rounded-full blur-[180px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[400px] bg-indigo-500/5 rounded-full blur-[170px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[600px] h-[500px] bg-[#2BF4C3]/5 rounded-full blur-[180px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 mb-3.5 shadow-sm">
-            <Radio className="w-3.5 h-3.5 text-teal-600 animate-pulse" />
-            <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 mb-3.5 shadow-sm">
+            <Radio className="w-3.5 h-3.5 text-[#00C49F] animate-pulse" />
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-800">
               Interactive Episode Studio
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Episode 01: <span className="text-gradient-vibrant">Why I Started My First Startup</span>
+            Episode 01: <span className="text-[#00C49F]">Why I Started My First Startup</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             Experience the raw recording booth. Explore interactive chapters, review the unvarnished show notes, and dive straight into the live stream.
           </p>
         </div>
 
-        {/* Master 3D Soundstage & Interactive Console Card with Vibrant Frame */}
-        <div className="bg-white rounded-3xl border-2 border-teal-500/30 shadow-2xl overflow-hidden max-w-5xl mx-auto mb-16 relative">
+        {/* Master 3D Soundstage & Interactive Console Card with Crisp Frame */}
+        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden max-w-5xl mx-auto mb-16 relative">
           
-          {/* Top Decorative Vibrant Gradient Line */}
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-400 via-sky-400 via-purple-500 to-pink-500 z-20" />
+          {/* Top Decorative Logo Mint Accent Line */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-[#2BF4C3] z-20" />
 
           {/* Top Half: 3D Soundstage Artwork Showcase */}
           <div className="relative w-full h-64 sm:h-80 md:h-96 overflow-hidden bg-slate-900 group">
@@ -132,10 +131,10 @@ export default function LatestEpisodeSection() {
             {/* Floating Live Studio Badges */}
             <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2 z-10">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md border border-white/20 text-white text-xs font-bold shadow-md">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[#2BF4C3] animate-pulse" />
                 <span>STUDIO BROADCAST · 48kHz</span>
               </span>
-              <span className="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-full bg-teal-500/80 backdrop-blur-md text-white text-xs font-mono font-bold shadow-md">
+              <span className="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-900/90 border border-[#2BF4C3]/40 backdrop-blur-md text-[#2BF4C3] text-xs font-mono font-bold shadow-md">
                 EPISODE 01 · 42 MINS
               </span>
             </div>
@@ -143,7 +142,7 @@ export default function LatestEpisodeSection() {
             {/* Bottom Title Bar on Image */}
             <div className="absolute bottom-6 left-6 right-6 z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
-                <span className="text-xs font-mono text-teal-300 font-bold uppercase tracking-wider block mb-1">
+                <span className="text-xs font-mono text-[#2BF4C3] font-bold uppercase tracking-wider block mb-1">
                   Featured Chapter: {chapters[activeChapter].time}
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">
@@ -157,7 +156,7 @@ export default function LatestEpisodeSection() {
               {/* Quick Play Trigger Pill */}
               <button
                 onClick={() => setIsPlaying(!isPlaying)}
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-teal-500/30 transition-all cursor-pointer transform hover:scale-105 self-start sm:self-auto"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#2BF4C3] hover:bg-[#3EFBDC] text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-[#2BF4C3]/30 transition-all cursor-pointer transform hover:scale-105 self-start sm:self-auto"
               >
                 {isPlaying ? (
                   <>
@@ -181,11 +180,11 @@ export default function LatestEpisodeSection() {
             <div className="p-4 sm:p-6 rounded-2xl bg-slate-900 text-white relative overflow-hidden shadow-inner">
               <div className="flex items-center justify-between gap-4 mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400">
+                  <div className="w-9 h-9 rounded-xl bg-[#2BF4C3]/10 border border-[#2BF4C3]/30 flex items-center justify-center text-[#2BF4C3]">
                     <Headphones className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-teal-400 block font-bold">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#2BF4C3] block font-bold">
                       {isPlaying ? "LIVE AUDIO EQUALIZER STREAMING" : "STANDBY · CLICK PLAY TO TEST WAVEFORM"}
                     </span>
                     <span className="text-sm font-bold text-white">
@@ -195,7 +194,7 @@ export default function LatestEpisodeSection() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono font-bold text-teal-400 bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">
+                  <span className="text-xs font-mono font-bold text-[#2BF4C3] bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">
                     {formatTime(simulatedSeconds)} / 42:00
                   </span>
                   <button
@@ -203,7 +202,7 @@ export default function LatestEpisodeSection() {
                     className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors cursor-pointer"
                     title={isMuted ? "Unmute" : "Mute"}
                   >
-                    {isMuted ? <VolumeX className="w-4 h-4 text-rose-400" /> : <Volume2 className="w-4 h-4 text-teal-400" />}
+                    {isMuted ? <VolumeX className="w-4 h-4 text-rose-400" /> : <Volume2 className="w-4 h-4 text-[#2BF4C3]" />}
                   </button>
                 </div>
               </div>
@@ -218,8 +217,7 @@ export default function LatestEpisodeSection() {
                   const animatedHeight = isPlaying 
                     ? Math.max(15, (val * ((idx % 3) + 1) * 0.4) % 100) 
                     : 15;
-                  const vibrantPalette = ["#0D9488", "#06B6D4", "#3B82F6", "#8B5CF6", "#EC4899", "#F59E0B"];
-                  const barColor = vibrantPalette[idx % vibrantPalette.length];
+                  const barColor = idx % 2 === 0 ? "#2BF4C3" : "#00C49F";
                   return (
                     <div
                       key={idx}
@@ -234,10 +232,10 @@ export default function LatestEpisodeSection() {
                 })}
               </div>
 
-              {/* Scrubber Track with Vibrant Gradient */}
+              {/* Scrubber Track with Crisp Mint Bar */}
               <div className="w-full bg-slate-800 h-2 rounded-full mt-3 overflow-hidden cursor-pointer">
                 <div 
-                  className="bg-gradient-to-r from-teal-400 via-sky-400 via-purple-500 to-pink-500 h-full rounded-full transition-all duration-300"
+                  className="bg-[#2BF4C3] h-full rounded-full transition-all duration-300"
                   style={{ width: `${Math.min(100, (simulatedSeconds / 2520) * 100)}%` }}
                 />
               </div>
@@ -246,7 +244,7 @@ export default function LatestEpisodeSection() {
             {/* Clickable Interactive Chapter Selectors */}
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <ListFilter className="w-4 h-4 text-teal-600" />
+                <ListFilter className="w-4 h-4 text-[#00C49F]" />
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-700">
                   Interactive Chapter Breakdown (Jump Directly To Lesson):
                 </span>
@@ -261,16 +259,16 @@ export default function LatestEpisodeSection() {
                       onClick={() => handleSelectChapter(idx)}
                       className={`p-3 rounded-xl text-left transition-all cursor-pointer border ${
                         isActive
-                          ? "bg-teal-50 border-teal-500 ring-2 ring-teal-200 shadow-sm"
+                          ? "bg-[#2BF4C3]/10 border-[#2BF4C3] ring-1 ring-[#2BF4C3]/30 shadow-sm"
                           : "bg-slate-50 border-slate-200 hover:border-slate-300 hover:bg-white"
                       }`}
                     >
                       <div className="flex items-center justify-between mb-1">
-                        <span className={`text-[11px] font-mono font-bold ${isActive ? "text-teal-700" : "text-slate-500"}`}>
+                        <span className={`text-[11px] font-mono font-bold ${isActive ? "text-[#00C49F]" : "text-slate-500"}`}>
                           {ch.time}
                         </span>
                         {isActive && (
-                          <span className="w-1.5 h-1.5 rounded-full bg-teal-600 animate-ping" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#00C49F] animate-ping" />
                         )}
                       </div>
                       <h4 className="text-xs font-bold text-slate-900 line-clamp-1">
@@ -329,7 +327,7 @@ export default function LatestEpisodeSection() {
           <p className="text-sm sm:text-base italic text-slate-600 font-medium leading-relaxed">
             &ldquo;A platform for every student, creator, and dreamer who believes in building a better tomorrow.&rdquo;
           </p>
-          <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-teal-500 to-transparent rounded-full mx-auto mt-4" />
+          <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#2BF4C3] to-transparent rounded-full mx-auto mt-4" />
         </div>
 
       </div>
