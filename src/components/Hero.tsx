@@ -33,8 +33,8 @@ export default function Hero() {
             </div>
 
             {/* Giant Styled Headline faithfully styled after the Official Show Logo */}
-            <div className="mb-6 leading-none">
-              <span className="text-2xl sm:text-3xl font-bold text-slate-500 block mb-1">
+            <div className="mb-4 leading-none">
+              <span className="text-2xl sm:text-3xl font-bold text-slate-900 block mb-1">
                 The
               </span>
               <h1 className="text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-slate-900 leading-[0.95] mb-1">
@@ -54,9 +54,13 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Repositioned Tagline */}
-            <div className="text-base sm:text-xl font-semibold text-slate-800 mb-4 tracking-wide leading-snug">
-              <p>Real stories from the journey of building something meaningful before success arrives.</p>
+            {/* Official Logo Motto Ribbon: REAL STORIES. REAL LESSONS. A BRIGHTER TOMORROW. */}
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-bold tracking-wider uppercase text-slate-700 mb-5 flex-wrap">
+              <span>Real Stories.</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2BF4C3]" />
+              <span>Real Lessons.</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2BF4C3]" />
+              <span className="text-[#00C49F] font-black">A Brighter Tomorrow.</span>
             </div>
 
             {/* Audience-First Description */}

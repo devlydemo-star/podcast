@@ -42,7 +42,7 @@ export default function BrandLogo({
       )}
       <div className="flex items-center gap-2">
         <div className="leading-tight">
-          <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block -mb-0.5">
+          <span className="text-[10px] font-bold text-slate-900 uppercase tracking-widest block -mb-0.5">
             The
           </span>
           <span className={`font-black tracking-tight text-slate-900 ${textSize}`}>
