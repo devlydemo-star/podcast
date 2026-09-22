@@ -5,7 +5,6 @@ import Image from "next/image";
 import { CheckCircle2, Sparkles, Send, Bell, ArrowRight, Users2 } from "lucide-react";
 import confetti from "canvas-confetti";
 import { SHOW_INFO } from "@/data/podcastData";
-import { WhatsappIcon } from "@/components/BrandIcons";
 
 export default function NewsletterSection() {
   const [name, setName] = useState("");
@@ -23,9 +22,9 @@ export default function NewsletterSection() {
     setError("");
     setSubmitted(true);
 
-    // Open WhatsApp community group invite
+    // Open community application form
     try {
-      window.open(SHOW_INFO.whatsappCommunityUrl, "_blank", "noopener,noreferrer");
+      window.open(SHOW_INFO.communityFormUrl, "_blank", "noopener,noreferrer");
     } catch {
       // fallback
     }
@@ -35,7 +34,7 @@ export default function NewsletterSection() {
         particleCount: 90,
         spread: 75,
         origin: { y: 0.7 },
-        colors: ["#2BF4C3", "#25D366", "#FFFFFF"],
+        colors: ["#2BF4C3", "#1DD1B9", "#FFFFFF"],
       });
     } catch {
       // ignore
@@ -98,22 +97,22 @@ export default function NewsletterSection() {
                 
                 {submitted ? (
                   <div className="text-center py-6 animate-in zoom-in-95 duration-300">
-                    <div className="w-14 h-14 rounded-full bg-[#25D366]/20 border border-[#25D366] flex items-center justify-center mx-auto mb-4 text-[#25D366]">
-                      <WhatsappIcon className="w-7 h-7" />
+                    <div className="w-14 h-14 rounded-full bg-[#2BF4C3]/20 border border-[#2BF4C3] flex items-center justify-center mx-auto mb-4 text-[#2BF4C3]">
+                      <Users2 className="w-7 h-7" />
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Welcome to the Movement!</h3>
                     <p className="text-xs text-[#94A3B8] leading-relaxed mb-5">
-                      Thank you for joining, <span className="text-[#2BF4C3] font-semibold">{name}</span>! We opened the official WhatsApp Community in a new tab. If it didn&apos;t open automatically, click below to join:
+                      Thank you for connecting, <span className="text-[#2BF4C3] font-semibold">{name}</span>! We opened the community application form in a new tab. If it didn&apos;t open automatically, click below to complete your application:
                     </p>
 
                     <a
-                      href={SHOW_INFO.whatsappCommunityUrl}
+                      href={SHOW_INFO.communityFormUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-lg shadow-[#25D366]/30 transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
+                      className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-lg shadow-[#2BF4C3]/30 transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
                     >
-                      <WhatsappIcon className="w-5 h-5 text-white" />
-                      <span>Join WhatsApp Community</span>
+                      <Users2 className="w-4 h-4 text-[#03100D]" />
+                      <span>Complete Application Form</span>
                       <ArrowRight className="w-4 h-4" />
                     </a>
 
@@ -164,12 +163,12 @@ export default function NewsletterSection() {
                       type="submit"
                       className="w-full py-3.5 rounded-xl font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-lg shadow-[#2BF4C3]/25 hover:shadow-[#2BF4C3]/40 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 cursor-pointer"
                     >
-                      <WhatsappIcon className="w-4 h-4 text-[#03100D]" />
-                      <span>Join WhatsApp Community</span>
+                      <Users2 className="w-4 h-4 text-[#03100D]" />
+                      <span>Apply to Join Community</span>
                     </button>
 
                     <p className="text-[11px] text-[#94A3B8]/70 text-center">
-                      Instant WhatsApp invite upon submission. No spam ever.
+                      Opens official application form upon submission. No spam ever.
                     </p>
                   </form>
                 )}

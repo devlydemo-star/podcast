@@ -2,11 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { X, Sparkles, Bell, ArrowRight } from "lucide-react";
+import { X, Sparkles, Bell, ArrowRight, Users } from "lucide-react";
 import confetti from "canvas-confetti";
 import BrandLogo from "@/components/BrandLogo";
 import { SHOW_INFO } from "@/data/podcastData";
-import { WhatsappIcon } from "@/components/BrandIcons";
 
 interface NewsletterModalProps {
   isOpen: boolean;
@@ -30,9 +29,9 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
     setError("");
     setSubmitted(true);
 
-    // Open WhatsApp community group invite
+    // Open community application form
     try {
-      window.open(SHOW_INFO.whatsappCommunityUrl, "_blank", "noopener,noreferrer");
+      window.open(SHOW_INFO.communityFormUrl, "_blank", "noopener,noreferrer");
     } catch {
       // fallback
     }
@@ -42,7 +41,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
         particleCount: 80,
         spread: 65,
         origin: { y: 0.6 },
-        colors: ["#2BF4C3", "#25D366", "#FFFFFF"],
+        colors: ["#2BF4C3", "#1DD1B9", "#FFFFFF"],
       });
     } catch {
       // ignore
@@ -62,22 +61,22 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
 
         {submitted ? (
           <div className="text-center py-6 animate-in zoom-in-95 duration-200">
-            <div className="w-14 h-14 rounded-full bg-[#25D366]/20 border border-[#25D366] flex items-center justify-center mx-auto mb-4 text-[#25D366]">
-              <WhatsappIcon className="w-7 h-7" />
+            <div className="w-14 h-14 rounded-full bg-[#2BF4C3]/20 border border-[#2BF4C3] flex items-center justify-center mx-auto mb-4 text-[#2BF4C3]">
+              <Users className="w-7 h-7" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Welcome aboard, {name}!</h3>
             <p className="text-xs text-[#94A3B8] leading-relaxed mb-5">
-              We opened the official WhatsApp Community in a new tab. If it didn&apos;t open automatically, click the button below:
+              We opened the community application form in a new tab. If it didn&apos;t open automatically, click the button below:
             </p>
 
             <a
-              href={SHOW_INFO.whatsappCommunityUrl}
+              href={SHOW_INFO.communityFormUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-lg shadow-[#25D366]/30 transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
+              className="w-full py-3.5 px-5 rounded-xl font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-lg shadow-[#2BF4C3]/30 transition-all flex items-center justify-center gap-2 cursor-pointer mb-4"
             >
-              <WhatsappIcon className="w-5 h-5 text-white" />
-              <span>Join WhatsApp Community</span>
+              <Users className="w-4 h-4 text-[#03100D]" />
+              <span>Complete Application Form</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
@@ -97,7 +96,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#081717] border border-[#2BF4C3]/30 mb-3">
               <Bell className="w-3 h-3 text-[#2BF4C3]" />
               <span className="text-[10px] font-bold uppercase tracking-wider text-[#2BF4C3]">
-                Founder VIP List & WhatsApp
+                Founder VIP List & Community
               </span>
             </div>
 
@@ -105,7 +104,7 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
               Never Miss an Episode or Lesson
             </h3>
             <p className="text-xs text-[#94A3B8] leading-relaxed mb-6">
-              Subscribe to weekly retrospective briefings and get direct access to our WhatsApp Founder Community.
+              Subscribe to weekly retrospective briefings and apply to get access to our Founder Community.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -141,8 +140,8 @@ export default function NewsletterModal({ isOpen, onClose }: NewsletterModalProp
                 type="submit"
                 className="w-full py-3.5 rounded-xl font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-[#2BF4C3]/20"
               >
-                <WhatsappIcon className="w-4 h-4 text-[#03100D]" />
-                <span>Join WhatsApp Community</span>
+                <Users className="w-4 h-4 text-[#03100D]" />
+                <span>Apply to Join Community</span>
               </button>
             </form>
           </div>

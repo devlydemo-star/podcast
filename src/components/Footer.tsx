@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { SHOW_INFO } from "@/data/podcastData";
-import { Heart, ArrowUp } from "lucide-react";
+import { Heart, ArrowUp, Users } from "lucide-react";
 import BrandLogo from "@/components/BrandLogo";
 import { SpotifyIcon, YoutubeIcon, LinkedinIcon, TwitterIcon, GithubIcon, WhatsappIcon } from "@/components/BrandIcons";
 
@@ -54,13 +54,13 @@ export default function Footer() {
                 <YoutubeIcon className="w-4 h-4" />
               </a>
               <a
-                href={SHOW_INFO.whatsappCommunityUrl}
+                href={SHOW_INFO.communityFormUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-[#081717] border border-white/10 flex items-center justify-center text-[#94A3B8] hover:text-[#25D366] hover:border-[#25D366] transition-colors"
-                title="WhatsApp Community"
+                className="w-9 h-9 rounded-lg bg-[#081717] border border-white/10 flex items-center justify-center text-[#94A3B8] hover:text-[#2BF4C3] hover:border-[#2BF4C3] transition-colors"
+                title="Join Community Form"
               >
-                <WhatsappIcon className="w-4 h-4" />
+                <Users className="w-4 h-4" />
               </a>
               <a
                 href={SHOW_INFO.socialLinks.linkedin}
@@ -143,21 +143,23 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               <a
-                href={SHOW_INFO.whatsappCommunityUrl}
+                href={SHOW_INFO.communityFormUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-[#081717] border border-white/5 hover:border-[#25D366]/40 flex items-center justify-between transition-colors group"
+                className="p-3 rounded-xl bg-[#081717] border border-white/5 hover:border-[#2BF4C3]/40 flex items-center justify-between transition-colors group"
               >
                 <div className="flex items-center gap-3">
-                  <WhatsappIcon className="w-4 h-4 text-[#25D366]" />
+                  <div className="w-7 h-7 rounded-lg bg-[#2BF4C3]/10 flex items-center justify-center text-[#2BF4C3] group-hover:scale-105 transition-transform">
+                    <Users className="w-4 h-4" />
+                  </div>
                   <div>
-                    <p className="text-xs font-bold text-white group-hover:text-[#25D366] transition-colors">
-                      Join WhatsApp Community
+                    <p className="text-xs font-bold text-white group-hover:text-[#2BF4C3] transition-colors">
+                      Join Community Form
                     </p>
-                    <p className="text-[10px] text-[#94A3B8]">Ambitious student builders</p>
+                    <p className="text-[10px] text-[#94A3B8]">Apply to join student builders</p>
                   </div>
                 </div>
-                <span className="text-xs text-[#25D366]">&rarr;</span>
+                <span className="text-xs text-[#2BF4C3] group-hover:translate-x-0.5 transition-transform">&rarr;</span>
               </a>
 
               <a

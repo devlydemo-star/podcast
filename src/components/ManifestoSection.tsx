@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight, Users } from "lucide-react";
 import { SHOW_INFO } from "@/data/podcastData";
-import { WhatsappIcon, SpotifyIcon } from "@/components/BrandIcons";
+import { SpotifyIcon } from "@/components/BrandIcons";
 
 export default function ManifestoSection() {
   return (
@@ -43,15 +43,15 @@ export default function ManifestoSection() {
         {/* Dual High-Impact Action CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
           
-          {/* Join WhatsApp Community */}
+          {/* Join Community */}
           <a
-            href={SHOW_INFO.whatsappCommunityUrl}
+            href={SHOW_INFO.communityFormUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-bold text-sm bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-xl shadow-[#25D366]/30 hover:shadow-[#25D366]/50 transition-all transform hover:scale-105 cursor-pointer"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-bold text-sm bg-[#2BF4C3] hover:bg-[#22d3a9] text-[#03100D] shadow-xl shadow-[#2BF4C3]/30 hover:shadow-[#2BF4C3]/50 transition-all transform hover:scale-105 cursor-pointer"
           >
-            <WhatsappIcon className="w-5 h-5 text-white" />
-            <span>Join WhatsApp Community</span>
+            <Users className="w-5 h-5 text-[#03100D]" />
+            <span>Join The Community</span>
           </a>
 
           {/* Listen on Spotify */}
