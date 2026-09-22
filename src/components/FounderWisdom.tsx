@@ -26,14 +26,14 @@ export default function FounderWisdom() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 border border-teal-200 mb-3.5 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 mb-3.5 shadow-sm">
             <Lightbulb className="w-3.5 h-3.5 text-teal-600" />
-            <span className="text-xs font-bold uppercase tracking-wider text-teal-700">
+            <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
               Founder Principles &amp; Heuristics
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Unfiltered <span className="text-teal-600">Founder Wisdom</span>
+            Unfiltered <span className="text-gradient-vibrant">Founder Wisdom</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             Raw mental models, startup heuristics, and honest advice forged in the messy trenches of building and shipping.
@@ -41,9 +41,9 @@ export default function FounderWisdom() {
         </div>
 
         {/* Featured Quote Highlight Card */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border-2 border-teal-500/30 shadow-xl relative mb-10 overflow-hidden max-w-4xl mx-auto">
-          {/* Top accent bar */}
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-600" />
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border-2 border-teal-500/30 shadow-2xl relative mb-10 overflow-hidden max-w-4xl mx-auto">
+          {/* Top vibrant accent bar */}
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-400 via-indigo-500 via-purple-500 to-pink-500" />
           
           {/* Subtle background quote watermark */}
           <div className="absolute -top-4 right-6 text-teal-600/10 pointer-events-none select-none">

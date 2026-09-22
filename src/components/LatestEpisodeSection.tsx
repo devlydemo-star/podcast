@@ -98,25 +98,25 @@ export default function LatestEpisodeSection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 border border-teal-200 mb-3.5 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 mb-3.5 shadow-sm">
             <Radio className="w-3.5 h-3.5 text-teal-600 animate-pulse" />
-            <span className="text-xs font-bold uppercase tracking-wider text-teal-700">
+            <span className="text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
               Interactive Episode Studio
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Episode 01: <span className="text-teal-600">Why I Started My First Startup</span>
+            Episode 01: <span className="text-gradient-vibrant">Why I Started My First Startup</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
             Experience the raw recording booth. Explore interactive chapters, review the unvarnished show notes, and dive straight into the live stream.
           </p>
         </div>
 
-        {/* Master 3D Soundstage & Interactive Console Card */}
+        {/* Master 3D Soundstage & Interactive Console Card with Vibrant Frame */}
         <div className="bg-white rounded-3xl border-2 border-teal-500/30 shadow-2xl overflow-hidden max-w-5xl mx-auto mb-16 relative">
           
-          {/* Top Decorative Gradient Line */}
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-600 z-20" />
+          {/* Top Decorative Vibrant Gradient Line */}
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-teal-400 via-sky-400 via-purple-500 to-pink-500 z-20" />
 
           {/* Top Half: 3D Soundstage Artwork Showcase */}
           <div className="relative w-full h-64 sm:h-80 md:h-96 overflow-hidden bg-slate-900 group">
@@ -218,24 +218,26 @@ export default function LatestEpisodeSection() {
                   const animatedHeight = isPlaying 
                     ? Math.max(15, (val * ((idx % 3) + 1) * 0.4) % 100) 
                     : 15;
+                  const vibrantPalette = ["#0D9488", "#06B6D4", "#3B82F6", "#8B5CF6", "#EC4899", "#F59E0B"];
+                  const barColor = vibrantPalette[idx % vibrantPalette.length];
                   return (
                     <div
                       key={idx}
                       className="flex-1 rounded-full transition-all duration-300"
                       style={{
                         height: `${animatedHeight}%`,
-                        backgroundColor: idx % 2 === 0 ? "#0D9488" : "#38BDF8",
-                        opacity: isPlaying ? 0.9 : 0.3,
+                        backgroundColor: barColor,
+                        opacity: isPlaying ? 0.95 : 0.35,
                       }}
                     />
                   );
                 })}
               </div>
 
-              {/* Scrubber Track */}
-              <div className="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden cursor-pointer">
+              {/* Scrubber Track with Vibrant Gradient */}
+              <div className="w-full bg-slate-800 h-2 rounded-full mt-3 overflow-hidden cursor-pointer">
                 <div 
-                  className="bg-gradient-to-r from-teal-500 to-sky-400 h-full rounded-full transition-all duration-300"
+                  className="bg-gradient-to-r from-teal-400 via-sky-400 via-purple-500 to-pink-500 h-full rounded-full transition-all duration-300"
                   style={{ width: `${Math.min(100, (simulatedSeconds / 2520) * 100)}%` }}
                 />
               </div>

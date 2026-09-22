@@ -73,19 +73,19 @@ export default function Navbar({ onOpenNewsletterModal }: NavbarProps) {
               >
                 <span>{link.name}</span>
                 {link.active && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-teal-600 rounded-full" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-500 via-indigo-500 to-pink-500 rounded-full" />
                 )}
               </a>
             ))}
           </nav>
 
-          {/* Right Actions: Listen on Spotify CTA */}
+          {/* Right Actions: Listen on Spotify CTA with Vibrant Shadow */}
           <div className="hidden sm:flex items-center gap-4">
             <a
               href={SHOW_INFO.spotifyShowUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider bg-slate-900 hover:bg-slate-800 text-white shadow-sm hover:shadow-md transition-all transform hover:scale-[1.02] cursor-pointer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider bg-slate-900 hover:bg-slate-800 text-white shadow-md shadow-teal-500/25 hover:shadow-teal-500/40 border border-teal-500/30 transition-all transform hover:scale-[1.02] cursor-pointer"
             >
               <span>Listen on Spotify</span>
               <ArrowRight className="w-4 h-4 text-teal-400" />

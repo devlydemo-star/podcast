@@ -284,18 +284,18 @@ export default function FounderToolkit() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           
-          {/* Eyebrow Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-50 border border-teal-200 shadow-sm mb-4">
+          {/* Eyebrow Badge with Vibrant Gradient */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-indigo-50 to-pink-50 border border-teal-200/80 shadow-sm mb-4">
             <Sparkles className="w-3.5 h-3.5 text-teal-600" />
-            <span className="text-xs font-bold uppercase tracking-widest text-teal-700">
+            <span className="text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-teal-800 via-indigo-800 to-rose-800 bg-clip-text text-transparent">
               Guest Experience Kit &amp; Founder Toolkit
             </span>
           </div>
 
-          {/* Clean Corporate Headline */}
+          {/* Clean Corporate Headline with Vibrant Gradient */}
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-4">
             Everything You Need To Know <br className="hidden sm:inline" />
-            <span className="text-teal-600">
+            <span className="text-gradient-vibrant">
               Before We Hit Record
             </span>
           </h2>
@@ -434,27 +434,29 @@ export default function FounderToolkit() {
                   </div>
                 </div>
 
-                {/* Right: 3D Isometric Toolkit Artwork Showcase */}
+                {/* Right: 3D Isometric Toolkit Artwork Showcase with Vibrant Gradient Frame */}
                 <div className="lg:col-span-5 relative flex justify-center">
-                  <div className="relative w-full max-w-sm rounded-2xl overflow-hidden border border-slate-200 shadow-xl group/img">
-                    <Image
-                      src="/images/founder-toolkit-3d.jpg"
-                      alt="The Young Founder Show 3D Toolkit Briefcase & Blueprint"
-                      width={640}
-                      height={640}
-                      className="w-full h-auto object-cover transform transition-transform duration-500 group-hover/img:scale-105"
-                      priority
-                    />
-                    
-                    {/* Floating verified badge */}
-                    <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-center gap-1.5">
-                      <div className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
-                      <span className="text-[11px] font-black text-slate-900 uppercase tracking-wider">Official Kit V2</span>
-                    </div>
+                  <div className="relative w-full max-w-sm rounded-2xl overflow-hidden bg-gradient-to-tr from-teal-400 via-indigo-500 to-pink-500 p-[2.5px] shadow-2xl group/img">
+                    <div className="relative rounded-[14px] overflow-hidden bg-white">
+                      <Image
+                        src="/images/founder-toolkit-3d.jpg"
+                        alt="The Young Founder Show 3D Toolkit Briefcase & Blueprint"
+                        width={640}
+                        height={640}
+                        className="w-full h-auto object-cover transform transition-transform duration-500 group-hover/img:scale-105"
+                        priority
+                      />
+                      
+                      {/* Floating verified badge */}
+                      <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
+                        <span className="text-[11px] font-black text-slate-900 uppercase tracking-wider">Official Kit V2</span>
+                      </div>
 
-                    {/* Floating page pill */}
-                    <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md border border-white/20 shadow-md text-white text-[11px] font-mono font-bold">
-                      15 Comprehensive Pages
+                      {/* Floating page pill */}
+                      <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md border border-white/20 shadow-md text-white text-[11px] font-mono font-bold">
+                        15 Comprehensive Pages
+                      </div>
                     </div>
                   </div>
                 </div>
